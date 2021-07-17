@@ -1,5 +1,8 @@
 # 🐱gaтι-вфт🤖
 ---------
+—————
+|DE|
+—————
 
 ### 📍NOTA:
 - **Este bot todavía esta en creación no lo instales :c**
