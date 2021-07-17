@@ -15,13 +15,13 @@
 </h1>
 
 ## 🤓 Índice
-- [📥Instalación](#⬇️-Instalación)
-- [🐱Contactos](#🥺-Contacto)
+- [📥Instalación](## ⬇️ Instalación en termux)
+- [🐱Contactos](## 🤝 Contacto)
 
 ---------
 ## 🔄 Atualizar automaticamente
 
-```
+```bash
 > cd gati-bot
 > sh update.sh
 ```
@@ -35,7 +35,7 @@
 ```bash
 > pkg update -y
 > pkg upgrade -y
-> pkg install -git
+> pkg install git
 > git clone https://github.com/g4tito/gati-bot
 > cd gati-bot
 > bash install.sh
@@ -44,13 +44,13 @@
 
 #### iniciar el bot manualmente
 
-```
+```bash
 > npm start
 ```
 
 #### reiniciar el bot automáticamente
 
-```
+```bash
 > sh start.sh
 ```
 
