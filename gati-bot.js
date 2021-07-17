@@ -272,10 +272,10 @@ function kyun(seconds){
 }
 /********** FUNCTION ***************/
 
-console.log(color('================================================================','red'))
-console.log(color('================[ GRACIAS POR INSTALAR A GATI-BOT ]================','yellow'))
-console.log(color('==================[ UN BOT ESCHO CON MUCHO ❤ ]==================','yellow'))
-console.log(color('================================================================','red'))
+console.log(color('========================================================','red'))==== 
+console.log(color('============[ GRACIAS POR INSTALAR A GATI-BOT ]============','yellow'))
+console.log(color('==============[ UN BOT ESCHO CON MUCHO ❤ ]==============','yellow'))
+console.log(color('========================================================','red'))
 const client = new WAConnection()
 //WWEB 
 client.version = [2, 2119, 6]
