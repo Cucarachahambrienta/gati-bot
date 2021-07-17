@@ -1,7 +1,7 @@
 # 🐱gaтι-вфт🤖
 ---------
 
-###📍NOTA:
+### 📍NOTA:
 - **Este bot todavía esta en creación no lo instales :c**
 
 ---------
