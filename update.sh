@@ -101,7 +101,7 @@ figlet -c -f slant -t 'gati-bot' | lolcat
 echo ""
 echo -e $GREEN"gati-bot actualizado con exito!!"
 echo ""
-elif [ $opts = "n"]; then
+if [ $opts = "n"]; then
     clear
     figlet -c -f slant -t 'gati-bot' | lolcat
 echo ""
