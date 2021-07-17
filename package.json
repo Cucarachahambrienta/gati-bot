@@ -1,7 +1,7 @@
 {
   "name": "gati-bot",
   "version": "1.0.0",
-  "description": "Un simple bot echo por gatito :3",
+  "description": "Un simple bot para WhatsApp u.u",
   "main": "index.js",
   "directories": {
     "lib": "lib"
