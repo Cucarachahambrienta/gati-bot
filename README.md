@@ -64,7 +64,7 @@
 
 #### apagar el bot
 
-- Le das a **CTRL** y después a **z**
+- Le das a **CTRL** y después **z**
 
 #### reiniciar el bot automáticamente
 
