@@ -28,8 +28,7 @@
 > WhatsApp
 > 2 celulares
 ```
-Descarga termux dado clic [aqui](https://play.google.com/store/apps/details?id=com.termux&hl=pt_BR&gl=ES)
-
+[](https://play.google.com/store/apps/details?id=com.termux&hl=pt_BR&gl=ES)
 Descarga termux dando clic [aqui](https://play.google.com/store/apps/details?id=com.termux&hl=pt_BR&gl=US)
 
 ---------
