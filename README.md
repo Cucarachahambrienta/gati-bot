@@ -15,10 +15,10 @@
 </h1>
 
 ## 📦 Índice
-- [Instalación](##⬇️-instalación-en-termux)
 - [Instalación](#⬇️-instalación-en-termux)
-- [Contactos](##🤝-contacto)
-- [a](#a-xd)
+- [Instalación](#⬇️-instalación-en-termux)
+- [Contactos](#🤝-contacto)
+- [a](#⬇️-a-xd)
 
 ---------
 ## 🔄 Atualizar automaticamente
