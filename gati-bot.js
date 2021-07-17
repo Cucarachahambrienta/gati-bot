@@ -26,9 +26,9 @@ const axios = require('axios')
 const { color, bgcolor } = require('./lib/color')
 const { bahasa } = require('./lib/bahasa')
 const { negara } = require('./lib/kodenegara')
-const { donasi } = require('./lib/donasi')
+//const { donasi } = require('./lib/donasi')
 const { developer } = require('./lib/developer')
-const { randompict } = require('./lib/randompict')
+//const { randompict } = require('./lib/randompict')
 const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
 const fontPath = ('./lib/Zahraaa.ttf')
@@ -66,7 +66,7 @@ const ownerNumber = ["51940617554@s.whatsapp.net"]   //ganti nomor lu
 
 
 /*********** LOAD FILE ***********/
-const _leveling = JSON.parse(fs.readFileSync('./base_de_datos/grupo/leveling.json'))
+const _leveling = JSON.parse(fs.readFileSync('./base_de_datos/grupo/nivelación.json'))
 const antilink = JSON.parse(fs.readFileSync('./base_de_datos/grupo/antilink.json'))
 //const antitelegram = JSON.parse(fs.readFileSync('./base_de_datos/kelompok/antitelegram.json'))
 //const antilinkig = JSON.parse(fs.readFileSync('./base_de_datos/kelompok/antilinkig.json'))
@@ -2557,11 +2557,11 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
 					if (args[0] === '1') {
 					if (isLevelingOn) return reply('*Fitur level sudah aktif sebelum nya*')
 					_leveling.push(from)
-					fs.writeFileSync('./database/kelompok/leveling.json', JSON.stringify(_leveling))
+					fs.writeFileSync('./base_de_datos/grupo/nivelación.json', JSON.stringify(_leveling))
 					reply(ind.lvlon())
 					} else if (args[0] === '0') {
 					_leveling.splice(from, 1)
-						fs.writeFileSync('./database/kelompok/leveling.json', JSON.stringify(_leveling))
+						fs.writeFileSync('./base_de_datos/grupo/nivelación.json', JSON.stringify(_leveling))
 						reply(ind.lvloff())
 					} else {
 						reply(ind.satukos())
@@ -2574,7 +2574,7 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
 					if (Number(args[0]) === 1) {
 						if (isWelkom) return reply('*Fitur welcome sudah aktif sebelum nya')
 						welkom.push(from)
-						fs.writeFileSync('./database/bot/welkom.json', JSON.stringify(welkom))
+						fs.writeFileSync('./base_de_datos/bot/bienvenida.json', JSON.stringify(welkom))
 						reply('❬ SUCCSESS ❭ mengaktifkan fitur welcome di group ini')
 					} else if (Number(args[0]) === 0) {
 						welkom.splice(from, 1)
@@ -2591,11 +2591,11 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
 					if (Number(args[0]) === 1) {
 						if (isSimi) return reply('SUDAH AKTIF !!!')
 						samih.push(from)
-						fs.writeFileSync('./database/bot/simi.json', JSON.stringify(samih))
+						fs.writeFileSync('./base_de_datos/bot/simi.json', JSON.stringify(samih))
 						reply('❬ SUKSES ❭ MENGAKTIFKAN FITUR SIMI DI GRUB INI')
 					} else if (Number(args[0]) === 0) {
 						samih.splice(from, 1)
-						fs.writeFileSync('./database/bot/simi.json', JSON.stringify(samih))
+						fs.writeFileSync('./base_de_datos/bot/simi.json', JSON.stringify(samih))
 						reply('❬ SUKSES ❭ MENONAKTIFKAN FITUR SIMI DI GRUB INI')
 					} else {
 						reply(ind.satukos())
@@ -2607,11 +2607,11 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
 					if (Number(args[0]) === 1) {
 						if (isNsfw) return reply(' *sudah aktif Slurr*  !!')
 						nsfw.push(from)
-						fs.writeFileSync('./database/bot/nsfw.json', JSON.stringify(nsfw))
+						fs.writeFileSync('./base_de_datos/bot/nsfw.json', JSON.stringify(nsfw))
 						reply('❬ SUKSES NGAB ❭ Mengaktifkan NSFW di grub ini')
 					} else if (Number(args[0]) === 0) {
 						nsfw.splice(from, 1)
-						fs.writeFileSync('./database/bot/nsfw.json', JSON.stringify(nsfw))
+						fs.writeFileSync('./base_de_datos/bot/nsfw.json', JSON.stringify(nsfw))
 						reply('❬ SUKSES NGAB ❭ Menonaktifkan NSFW di grub ini')
 					} else {
 						reply(ind.satukos())
@@ -2625,13 +2625,13 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
 					if (Number(args[0]) === 1) {
 						if (isAntilink) return reply('Anti link group sudah aktif')
 						antilink.push(from)
-						fs.writeFileSync('./database/kelompok/antilink.json', JSON.stringify(antilink))
+						fs.writeFileSync('./base_de_datos/grupo/antilink.json', JSON.stringify(antilink))
 						reply('Sukses mengaktifkan anti link group di group ini ✔️')
 						client.sendMessage(from,`Perhatian kepada seluruh member anti link group aktif apabila anda mengirim link group anda akan di kick dari group`, text)
 					} else if (Number(args[0]) === 0) {
 						if (!isAntilink) return reply('Mode anti link group sudah disable')
 						antilink.splice(from, 1)
-						fs.writeFileSync('./database/kelompok/antilink.json', JSON.stringify(antilink))
+						fs.writeFileSync('./base_de_datos/grupo/antilink.json', JSON.stringify(antilink))
 						reply('Sukes menonaktifkan anti link group di group ini ✔️')
 					} else {
 						reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
@@ -2648,14 +2648,14 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
 					if (Number(args[0]) === 1) {
 						if (isAntiLink) return reply('anti link group sudah aktif')
 						antilink.push(from)
-						fs.writeFileSync('./database/kelompok/antilink.json', JSON.stringify(antilink))
+						fs.writeFileSync('./base_de_datos/grupo/antilink.json', JSON.stringify(antilink))
 						reply('Sukses mengaktifkan anti link group di group ini ✔️')
 						client.sendMessage(from,`Perhatian kepada seluruh member anti link group aktif apabila anda mengirim link group anda akan di kick dari group`, text)
 					} else if (Number(args[0]) === 0) {
 						if (isAntiLink) return reply('Mode anti link group sudah disable')
 						var ini = antilink.indexOf(from)
 						antilink.splice(ini)
-						fs.writeFileSync('./database/kelompok/antilink.json', JSON.stringify(antilink))
+						fs.writeFileSync('./base_de_datos/grupo/antilink.json', JSON.stringify(antilink))
 						reply('Sukes menonaktifkan anti link group di group ini ✔️')
 					} else {
 						reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
@@ -2671,14 +2671,14 @@ case 'antilinkyoutube-v':
 					if (Number(args[0]) === 1) {
 						if (isAntiLinkytv) return reply('anti link YouTube video sudah aktif')
 						antilinkytv.push(from)
-						fs.writeFileSync('./database/kelompok/antilinkyt.json', JSON.stringify(antilinkytv))
+						fs.writeFileSync('./base_de_datos/grupo/antilinkyt.json', JSON.stringify(antilinkytv))
 						reply('Sukses mengaktifkan anti link YouTube di group ini ✔️')
 						client.sendMessage(from,`「 *NOTICE GROUP* 」Jika bukan admin jangan kirim link YouTube Video`, text)
 					} else if (Number(args[0]) === 0) {
 						if (isAntiLinkytv) return reply('Mode anti link YouTube video sudah Mati')
 						var ini = antilinkytv.indexOf(from)
 						antilinkytv.splice(ini, 1)
-						fs.writeFileSync('./database/kelompok/antilinkyt.json', JSON.stringify(antilinkytv))
+						fs.writeFileSync('./base_de_datos/grupo/antilinkyt.json', JSON.stringify(antilinkytv))
 						reply('Sukes menonaktifkan anti link YouTube video di group ini ✔️')
 					} else {
 						reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
