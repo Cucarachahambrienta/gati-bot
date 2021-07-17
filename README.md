@@ -16,7 +16,7 @@
 
 # 🤓 Índice
 - [📥Instalación](#⬇️-Instalación)
-- [Contatos](#🤝-Contacto)
+- [🪀Contactos](#🤝-Contacto)
 
 ---
 # 🔄 Atualizar automaticamente
