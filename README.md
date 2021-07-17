@@ -54,11 +54,17 @@
 > npm start
 ```
 
+- Después de eso te aparecerá un código **QR** lo escaneas con el WhatsApp web y listo :b
+
 #### iniciar el bot manualmente
 
 ```bash
 > npm start
 ```
+
+#### apagar el bot
+
+Le das a **CTRL** y después a **z**
 
 #### reiniciar el bot automáticamente
 
