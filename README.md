@@ -29,7 +29,7 @@
 > 2 celulares
 ```
 
-- Descarga termux dando clic [aqui](https://play.google.com/store/apps/details?id=com.termux&hl=pt_BR&gl=US)
+- Descarga termux [aqui](https://play.google.com/store/apps/details?id=com.termux&hl=pt_BR&gl=US)
 
 ---------
 
