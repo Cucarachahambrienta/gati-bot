@@ -8,9 +8,9 @@
     </p>
     <p>
         <a href="https://github.com/g4tito/followers"><img title="Followers" src="https://img.shields.io/github/followers/g4tito?color=blue&style=flat-square"></a>
-        <a href="https://github.com/mhankbarbar/termux-wabot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/mhankbarbar/termux-wabot?label=Watchers&color=blue&style=flat-square"></a>
-        <a href="https://github.com/mhankbarbar/termux-wabot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/mhankbarbar/termux-wabot?color=blue&style=flat-square"></a>
-        <a href="https://github.com/mhankbarbar/termux-wabot/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/mhankbarbar/termux-wabot?color=blue&style=flat-square"></a>
+        <a href="https://github.com/g4tito/gati-bot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/g4tito/gati-bot?label=Watchers&color=blue&style=flat-square"></a>
+        <a href="https://github.com/g4tito/gati-bot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/g4tito/gati-bot?color=blue&style=flat-square"></a>
+        <a href="https://github.com/g4tito/gati-bot/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/g4tito/gati-bot?color=blue&style=flat-square"></a>
     </p>
 </h1>
 
