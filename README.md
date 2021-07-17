@@ -83,7 +83,7 @@
 #### reiniciar el bot automáticamente
 
 ```bash
-> sh start.sh
+> bash start.sh
 ```
 
 ---------
