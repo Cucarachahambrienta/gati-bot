@@ -62,7 +62,7 @@
 
 - Después de eso te aparecerá un código **QR** lo escaneas con el WhatsApp web y listo :b
 
-## Restablecer código qr
+### Restablecer código qr
 
 - Si no pudiste escanear el codigo **QR** pon el comando
 
