@@ -34,18 +34,18 @@
 
 ```
 > git clone https://github.com/g4tito/gati-bot
-> cd Brizas-bot
+> cd gati-bot
 > bash install.sh
 > npm install
 ```
 
-### iniciar el bot manualmente
+#### iniciar el bot manualmente
 
 ```
 > npm start
 ```
 
-### reiniciar el bot automáticamente
+#### reiniciar el bot automáticamente
 
 ```
 > sh start.sh
