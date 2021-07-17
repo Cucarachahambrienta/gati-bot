@@ -58,6 +58,5 @@
 
 ## 🤝 Contacto
 
-[Whatsapp](https://api.whatsapp.com/send/?phone=%2B51940617554&text&app_absent=0)
-
+https://img.shields.io/badge/WhatsApp%20gatito-25D366?style=for-the-badge&logo=whatsapp&logoColor=white
 
