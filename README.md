@@ -1,7 +1,7 @@
 # 🐱gaтι-вфт🤖
 <h1 align="center">
     <p>
-        <img src= "descarga.gif">
+        <img src= "almacenamiento/imajenes/gati_2.jpg">
     </p>
     <p>
         <a href="https://github.com/g4tito"><img title="Author"    src="https://img.shields.io/badge/Author-gatito-purple.svg?style=for-the-badge&logo=github"></a>
