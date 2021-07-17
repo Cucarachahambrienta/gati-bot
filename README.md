@@ -43,7 +43,7 @@
 
 ```bash
 > cd gati-bot
-> sh update.sh
+> bash update.sh
 ```
 
 ---------
