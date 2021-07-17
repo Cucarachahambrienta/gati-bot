@@ -16,9 +16,9 @@
 
 ## 📦 Índice
 - [Instalación](##⬇️-instalación-en-termux)
--[Instalación](#⬇️-instalación-en-termux)
+- [Instalación](#⬇️-instalación-en-termux)
 - [Contactos](##🤝-contacto)
-- [a](##a)
+- [a](#a)
 
 ---------
 ## 🔄 Atualizar automaticamente
