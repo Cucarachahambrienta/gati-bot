@@ -15,8 +15,8 @@
 </h1>
 
 ## 🤓 Índice
-- [📥Instalación](## ⬇️ Instalación en termux)
-- [🐱Contactos](## 🤝 Contacto)
+- [📥Instalación](# ⬇️ Instalación en termux)
+- [🐱Contactos](# 🤝 Contacto)
 
 ---------
 ## 🔄 Atualizar automaticamente
