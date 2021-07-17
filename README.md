@@ -1,4 +1,4 @@
-# 🐱gaтι-вфт🤖
+## 🐱gaтι-вфт🤖
 <h1 align="center">
     <p>
         <img src= "almacenamiento/imajenes/gati_2.jpg">
@@ -14,51 +14,35 @@
     </p>
 </h1>
 
-# 🤓 Índice
+## 🤓 Índice
 - [📥Instalación](#⬇️-Instalación)
 - [🐱Contactos](#🥺-Contacto)
 
 ---
-# 🔄 Atualizar automaticamente
-```
-> cd gati-bot
-> sh update.sh
-```
----
-# 🌐 Logando e deslogando do wpp web
-```
-> cd gati-bot
-> node reset.js
-
-(para logar de novo)
-> node index.js
-```
+## 🔄 Atualizar automaticamente
+```> cd gati-bot
+> sh update.sh```
 
 ---
 
-# ⬇️ Instalación
+## ⬇️ Instalación
 
 [Termux](https://play.google.com/store/apps/details?id=com.termux&hl=pt_BR&gl=US)
 
-```
-> git clone https://github.com/g4tito/gati-bot
+```> git clone https://github.com/g4tito/gati-bot
 > cd Brizas-bot
 > bash install.sh
-> npm install
+> npm install```
 
-(iniciar el bot manualmente)
-> npm start
+# iniciar el bot manualmente
+```> npm start```
 
-(reiniciar el bot automáticamente en caso de crasheo)
-> sh start.sh
+# reiniciar el bot automáticamente en caso de crasheo
+```> sh start.sh```
 
-(o tambien)
-> pm2 start index.js
-
-```
 ---
 
-# 🤝 Contacto
+## 🤝 Contacto
 
 [Whatsapp](https://api.whatsapp.com/send/?phone=%2B51940617554&text&app_absent=0)
 
