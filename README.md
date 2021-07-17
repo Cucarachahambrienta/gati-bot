@@ -1,7 +1,7 @@
 # 🐱gaтι-вфт🤖
 <h1 align="center">
     <p>
-        <img src= "https://thumbs.gfycat.com/ComplexSourKakapo-size_restricted.gif">
+        <img src= "descarga.gif">
     </p>
     <p>
         <a href="https://github.com/g4tito"><img title="Author"    src="https://img.shields.io/badge/Author-gatito-purple.svg?style=for-the-badge&logo=github"></a>
