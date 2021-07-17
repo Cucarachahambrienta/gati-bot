@@ -1,4 +1,4 @@
-## 🐱gaтι-вфт🤖
+# 🐱gaтι-вфт🤖
 <h1 align="center">
     <p>
         <img src= "almacenamiento/imajenes/gati_2.jpg">
@@ -14,12 +14,12 @@
     </p>
 </h1>
 
-## 🤓 Índice
+# 🤓 Índice
 - [📥Instalación](#⬇️-Instalación)
 - [🐱Contactos](#🥺-Contacto)
 
 ---------
-## 🔄 Atualizar automaticamente
+# 🔄 Atualizar automaticamente
 
 ```
 > cd gati-bot
@@ -28,7 +28,7 @@
 
 ---------
 
-## ⬇️ Instalación
+# ⬇️ Instalación
 
 [Termux](https://play.google.com/store/apps/details?id=com.termux&hl=pt_BR&gl=US)
 
@@ -39,13 +39,13 @@
 > npm install
 ```
 
-# iniciar el bot manualmente
+### iniciar el bot manualmente
 
 ```
 > npm start
 ```
 
-# reiniciar el bot automáticamente
+### reiniciar el bot automáticamente
 
 ```
 > sh start.sh
@@ -53,7 +53,7 @@
 
 ---------
 
-## 🤝 Contacto
+# 🤝 Contacto
 
 [Whatsapp](https://api.whatsapp.com/send/?phone=%2B51940617554&text&app_absent=0)
 
