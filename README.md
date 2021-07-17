@@ -1,8 +1,10 @@
 # 🐱gaтι-вфт🤖
+---------
 
-###**📍NOTA**
-- **Este bot todavía esta en creacion no lo instales :c**
+###📍NOTA:
+- **Este bot todavía esta en creación no lo instales :c**
 
+---------
 <h1 align="center">
     <p>
         <img src= "almacenamiento/imajenes/gati_2.jpg">
