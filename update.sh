@@ -12,7 +12,7 @@ sleep 4
 
 clear
 figlet -c -f slant -t 'gati-bot' | lolcat 
-
+echo ""
 echo -e " ${CYAN}Instalando todas las dependencias ..." | lolcat -a -d 50 
 
 echo -e " ${NOCOLOR}"
@@ -24,7 +24,7 @@ sleep 2
 
 clear
 figlet -c -f slant -t 'gati-bot' | lolcat 
-
+echo ""
 echo -e " ${NOCOLOR}"
 echo -e " ${PURPLE} Usando el comando: pkg upgrade"
 echo -e " ${GREEN}"
@@ -34,7 +34,7 @@ sleep 2
 
 clear
 figlet -c -f slant -t 'gati-bot' | lolcat 
-
+echo ""
 echo -e $YELLOW"Seguro que quieres actualizar a gati-bot? [s/n]"
 read -p "> " opts
 
@@ -42,13 +42,13 @@ if [ $opts = "s" ]; then
 
 clear
 figlet -c -f slant -t 'gati-bot' | lolcat 
-
+echo ""
 echo -e $YELLOW"Actualizando gati-bot, espere..."
 git clone https://github.com/g4tito/gati-bot > /dev/null 2> /dev/null
 
 clear
 figlet -c -f slant -t 'gati-bot' | lolcat 
-
+echo ""
 echo -e " ${NOCOLOR}"
 echo -e " ${PURPLE} Usando el comando: cd gati-bot"
 echo -e " ${GREEN}"
@@ -58,7 +58,7 @@ sleep 2
 
 clear
 figlet -c -f slant -t 'gati-bot' | lolcat 
-
+echo ""
 echo -e " ${NOCOLOR}"
 echo -e " ${PURPLE} Usando el comando: cp -r * .."
 echo -e " ${GREEN}"
@@ -68,7 +68,7 @@ sleep 2
 
 clear
 figlet -c -f slant -t 'gati-bot' | lolcat 
-
+echo ""
 echo -e " ${NOCOLOR}"
 echo -e " ${PURPLE} Usando el comando: cd .."
 echo -e " ${GREEN}"
@@ -78,7 +78,7 @@ sleep 2
 
 clear
 figlet -c -f slant -t 'gati-bot' | lolcat 
-
+echo ""
 echo -e " ${NOCOLOR}"
 echo -e " ${PURPLE} Usando el comando: rm -rf gati-bot"
 echo -e " ${GREEN}"
@@ -88,7 +88,7 @@ sleep 2
 
 clear
 figlet -c -f slant -t 'gati-bot' | lolcat 
-
+echo ""
 echo -e " ${NOCOLOR}"
 echo -e " ${PURPLE} Usando el comando: npm i"
 echo -e " ${GREEN}"
@@ -98,12 +98,13 @@ sleep 2
 
 clear
 figlet -c -f slant -t 'gati-bot' | lolcat 
-
+echo ""
 echo -e $GREEN"gati-bot actualizado con exito!!"
-
+echo ""
 elif [ $opts = "n"]; then
     clear
-    figlet -c -f slant -t 'gati-bot' | lolcat 
+    figlet -c -f slant -t 'gati-bot' | lolcat
+echo ""
     echo -e $RED"La actualizacion de gati-bot se canceló"
     exit
 fi
