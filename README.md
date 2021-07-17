@@ -18,7 +18,7 @@
 - [Instalación](#⬇️-instalación-en-termux)
 - [Instalación](#⬇️-instalación-en-termux)
 - [Contactos](#🤝-contacto)
-- [a](#⬇️-a-xd)
+- [a](#⬇️a-xd)
 
 ---------
 ## 🔄 Atualizar automaticamente
