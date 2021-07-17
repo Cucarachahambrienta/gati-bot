@@ -4,7 +4,7 @@
         <img src= "almacenamiento/imajenes/gati_2.jpg">
     </p>
     <p align="center">
-        <a href="#"><img title="termux-bot-wa" src="https://img.shields.io/badge/-TERMUX--BOT--WA-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+        <a href="#"><img title="whatsapp-bot-termux" src="https://img.shields.io/badge/-WHATSAPP--BOT--TERMUX-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
     </p>
     <p>
         <a href="https://github.com/g4tito"><img title="Author"    src="https://img.shields.io/badge/Author-gatito-purple.svg?style=for-the-badge&logo=github"></a>
