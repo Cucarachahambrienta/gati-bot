@@ -272,19 +272,19 @@ function kyun(seconds){
 }
 /********** FUNCTION ***************/
 
-console.log(color('WELCOME DI WA CONNECTION BAGASBOT, SILAHKAN SCAN KODE DI BAWAH','green'))
-console.log(color('JIKA KODE QR TIDAK MUNCUL SILAHLAN HAPUS FERNAZER.JSON YA KETIK MC','red'))
-console.log(color('JANGAN PERJUALKAN SC INI KARNA SC INI GRATIS BUAT SEMUA ORNG YAA','yellow'))
-console.log(color('BASE BAGAS MENGINTAI DARI JAUH KAMI TAU APA YG ANDA LAKUKAN PD BOT','red'))
+console.log(color('================================================================','red'))
+console.log(color('================[ GRACIAS POR INSTALAR A GATI-BOT ]================','yellow'))
+console.log(color('==================[ UN BOT ESCHO CON MUCHO ❤ ]==================','yellow'))
+console.log(color('================================================================','red'))
 const client = new WAConnection()
 //WWEB 
 client.version = [2, 2119, 6]
    client.on('qr', qr => {
    qrcode.generate(qr, { small: true }) 
-   console.log(color('AWAS QR NYA GAK WORK LOH KALO GAK SUBSCRIBE CHANEL BAGASBOT','red'))
-   console.log(color('AWAS QR NYA GAK WORK LOH KALO GAK SUBSCRIBE CHANEL BAGASBOT','red'))
-   console.log(color('AWAS QR NYA GAK WORK LOH KALO GAK SUBSCRIBE CHANEL BAGASBOT','red'))
-   console.log(color('AWAS QR NYA GAK WORK LOH KALO GAK SUBSCRIBE CHANEL BAGASBOT','red'))
+   console.log(color('Escanea el codigo de arriba u.u','red'))
+   console.log(color('Escanea el codigo de arriba u.u','red'))
+   console.log(color('Escanea el codigo de arriba u.u','red'))
+   console.log(color('Ya sabes si no pudiste escanear el codigo a tiempo pon "bash restore.sh"','yellow'))
 })		
 client.on('credentials-updated', () => {
 	const authInfo = client.base64EncodedAuthInfo()
