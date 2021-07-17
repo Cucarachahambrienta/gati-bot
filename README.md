@@ -1,6 +1,6 @@
 # 🐱gaтι-вфт🤖
 <h1 align="center">
-
+    <p>
         <img src= "almacenamiento/imajenes/gati_2.jpg">
     </p>
     <p>
