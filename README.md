@@ -14,13 +14,20 @@
     </p>
 </h1>
 
-## 📦 Índice
-- [Instalación](#instalación-en-termux)
-- [Instalación](#instalación-en-termux)
-- [Contactos](#🤝-contacto)
-- [a](#⬇️-a)
+---------
+
+## Herramientas
+
+```bash
+> Termux
+> WhatsApp
+> 2 celulares
+```
+
+- Descarga termux dando clic [Aqui](https://play.google.com/store/apps/details?id=com.termux&hl=pt_BR&gl=US)
 
 ---------
+
 ## 🔄 Atualizar automaticamente
 
 ```bash
@@ -31,8 +38,6 @@
 ---------
 
 ## ⬇️ Instalación en termux
-
-[Termux](https://play.google.com/store/apps/details?id=com.termux&hl=pt_BR&gl=US)
 
 ```bash
 > pkg update -y
