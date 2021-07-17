@@ -35,14 +35,6 @@ sleep 2
 clear
 figlet -c -f slant -t 'gati-bot' | lolcat 
 echo ""
-echo -e $YELLOW"Seguro que quieres actualizar a gati-bot? [s/n]"
-read -p "> " opts
-
-if [ $opts = "s" ]; then
-
-clear
-figlet -c -f slant -t 'gati-bot' | lolcat 
-echo ""
 echo -e $YELLOW"Actualizando gati-bot, espere..."
 git clone https://github.com/g4tito/gati-bot > /dev/null 2> /dev/null
 
@@ -101,10 +93,3 @@ figlet -c -f slant -t 'gati-bot' | lolcat
 echo ""
 echo -e $GREEN"gati-bot actualizado con exito!!"
 echo ""
-elif [ $opts = "n"]; then
-    clear
-    figlet -c -f slant -t 'gati-bot' | lolcat
-echo ""
-    echo -e $RED"La actualizacion de gati-bot se canceló"
-    exit
-fi
