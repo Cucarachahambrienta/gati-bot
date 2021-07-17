@@ -16,22 +16,22 @@
 
 # 🤓 Índice
 - [📥Instalación](#⬇️-Instalación)
-- [🪀Contactos](#🤝-Contacto)
+- [🐱Contactos](#🥺-Contacto)
 
 ---
 # 🔄 Atualizar automaticamente
 ```
-cd gati-bot
-sh update.sh
+> cd gati-bot
+> sh update.sh
 ```
 ---
 # 🌐 Logando e deslogando do wpp web
 ```
-cd gati-bot
-node reset.js
+> cd gati-bot
+> node reset.js
 
 (para logar de novo)
-node index.js
+> node index.js
 ```
 
 ---
@@ -41,19 +41,19 @@ node index.js
 [Termux](https://play.google.com/store/apps/details?id=com.termux&hl=pt_BR&gl=US)
 
 ```
-git clone https://github.com/g4tito/gati-bot
-cd Brizas-bot
-bash install.sh
-npm install
+> git clone https://github.com/g4tito/gati-bot
+> cd Brizas-bot
+> bash install.sh
+> npm install
 
 (iniciar el bot manualmente)
-npm start
+> npm start
 
 (reiniciar el bot automáticamente en caso de crasheo)
-sh start.sh
+> sh start.sh
 
 (o tambien)
-pm2 start index.js
+> pm2 start index.js
 
 ```
 ---
