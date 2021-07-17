@@ -20,8 +20,11 @@
 
 ---------
 ## 🔄 Atualizar automaticamente
-```> cd gati-bot
-> sh update.sh```
+
+```
+> cd gati-bot
+> sh update.sh
+```
 
 ---------
 
@@ -29,16 +32,24 @@
 
 [Termux](https://play.google.com/store/apps/details?id=com.termux&hl=pt_BR&gl=US)
 
-```> git clone https://github.com/g4tito/gati-bot
+```
+> git clone https://github.com/g4tito/gati-bot
 > cd Brizas-bot
 > bash install.sh
-> npm install```
+> npm install
+```
 
 # iniciar el bot manualmente
-```> npm start```
 
-# reiniciar el bot automáticamente en caso de crasheo
-```> sh start.sh```
+```
+> npm start
+```
+
+# reiniciar el bot automáticamente
+
+```
+> sh start.sh
+```
 
 ---------
 
