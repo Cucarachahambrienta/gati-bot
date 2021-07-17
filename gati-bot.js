@@ -1,17 +1,6 @@
-//SC ORI MHANKBARBAR
+//BOT BY G4TITO
 //API TO lolhuman
 //API TO2 Vhtear
-//PENGEMBANG SC INI SEBAGAI BERIKUT
-//FERNAZER
-//MHANKBARBAR 
-//RAFLI MAULAN
-//ARYA MANIK
-//SMARTBOT
-//BAGASBOT
-//JANGAN HAPUS NAMA PENGEMBANG, LU CMN NUMPANG DI SINI
-//PERCUMA JG DI HAPUS GAK BAKAL BISA BUAT LO PRO KLO CMN 
-//KANG RRCODE, TAPI DI HAPUS SEMUA
-//JANGAN SOK NGAKU2 
 const {
    WAConnection,
    MessageType,
@@ -51,14 +40,14 @@ const brainly = require('brainly-scraper')
 const ffmpeg = require('fluent-ffmpeg')
 const cd = 4.32e+7
 const { removeBackgroundFromImageFile } = require('remove.bg')
-const { ind } = require('./bahasa')
+const { ind } = require('./mensaje')
 
-/********** MENU SETTING **********/ 
+/********** MENU AJUSTES **********/ 
 const vcard = 'BEGIN:VCARD\n' //jangan ganti eror jngn nyesel
-            + 'VERSION:3.0\n' //biarin aja eror jngn nyesel
-            + 'FN:BagasGanz\n' //ganti aja 
-            + 'ORG: CREAT0R B0T;\n' //ganti aja
-            + 'TEL;type=CELL;type=VOICE;waid=6285880154450:+6285880154450\n'  //ganti nomor lu
+            + 'VERSION:1.0.0\n' //biarin aja eror jngn nyesel
+            + 'FN:gatito\n' //ganti aja 
+            + 'ORG:CREADOR DE GATI-BOT;\n' //ganti aja
+            + 'TEL;type=CELL;type=VOICE;waid=51940617554:+51940617554\n'  //ganti nomor lu
             + 'END:VCARD' //jangan ganti eror jangan nyesel
 prefix = '#' //terserah mau ganti apa gak
 blocked = [] //biarin aja eror jngn nyesel
@@ -66,44 +55,44 @@ replitx = '*SUBREK BAGAS BOT*'
 ari = '*YT BAGAS BOT*'
 limitawal = 50 //terserah mau ganti apa gak 
 memberlimit = 10 //terserah mau ganti apa gak 
-namabot = 'BagasBot'
-cr = '*「 BagasBot 」*' //ganti nama bot
-ftoko = "BagasBot" //ganti nama bot
+namabot = 'gati-bot'
+cr = '*「 gati-bot 」*' //ganti nama bot
+ftoko = "gati-bot" //ganti nama bot
 lolkey = '682aeab645ed61cf137cf971' //apikey nya beli sendiri
-apivhtear = 'YT_BAGASBOT' //apikey beli sendiri
-/******** OWNER NUMBER**********/
+apivhtear = 'YT_GATI-BOT' //apikey beli sendiri
+/******** NUMERO DEL CREADOR *********/
 
-const ownerNumber = ["6285880154450@s.whatsapp.net"]   //ganti nomor lu
+const ownerNumber = ["51940617554@s.whatsapp.net"]   //ganti nomor lu
 
 
 /*********** LOAD FILE ***********/
-const _leveling = JSON.parse(fs.readFileSync('./database/kelompok/leveling.json'))
-const antilink = JSON.parse(fs.readFileSync('./database/kelompok/antilink.json'))
-const antitelegram = JSON.parse(fs.readFileSync('./database/kelompok/antitelegram.json'))
-const antilinkig = JSON.parse(fs.readFileSync('./database/kelompok/antilinkig.json'))
-const antilinkfb = JSON.parse(fs.readFileSync('./database/kelompok/antilinkfb.json'))
-const antilinkytv = JSON.parse(fs.readFileSync('./database/kelompok/antilinkyt.json'))
-const antilinkytc = JSON.parse(fs.readFileSync('./database/kelompok/antilinkytchannel.json'))
-const antifirtex = JSON.parse(fs.readFileSync('./database/kelompok/antifirtex.json'))
-const antifirtex2 = JSON.parse(fs.readFileSync('./database/kelompok/antifirtex2.json'))
-const antifirtex3 = JSON.parse(fs.readFileSync('./database/kelompok/antifirtex3.json'))
-const antifirtex4 = JSON.parse(fs.readFileSync('./database/kelompok/antifirtex4.json'))
-const antifirtex5 = JSON.parse(fs.readFileSync('./database/kelompok/antifirtex5.json'))
-const antifirtex6 = JSON.parse(fs.readFileSync('./database/kelompok/antifirtex6.json'))
-const antifirtex7 = JSON.parse(fs.readFileSync('./database/kelompok/antifirtex7.json'))
-const _level = JSON.parse(fs.readFileSync('./database/pengguna/level.json'))
-const _registered = JSON.parse(fs.readFileSync('./database/bot/pengguna.json'))
-const welkom = JSON.parse(fs.readFileSync('./database/bot/welkom.json'))
-const nsfw = JSON.parse(fs.readFileSync('./database/bot/nsfw.json'))
-const samih = JSON.parse(fs.readFileSync('./database/bot/simi.json'))
-const event = JSON.parse(fs.readFileSync('./database/bot/event.json'))
-const _limit = JSON.parse(fs.readFileSync('./database/pengguna/limit.json'))
-const uang = JSON.parse(fs.readFileSync('./database/pengguna/uang.json'))
-const ban = JSON.parse(fs.readFileSync('./database/pengguna/banned.json'))
-const prem = JSON.parse(fs.readFileSync('./database/pengguna/premium.json'))
-const adm = JSON.parse(fs.readFileSync('./database/pengguna/admin.json'))
-const bad = JSON.parse(fs.readFileSync('./database/kelompok/bad.json'))
-const badword = JSON.parse(fs.readFileSync('./database/kelompok/badword.json'))
+const _leveling = JSON.parse(fs.readFileSync('./base_de_datos/grupo/leveling.json'))
+const antilink = JSON.parse(fs.readFileSync('./base_de_datos/grupo/antilink.json'))
+//const antitelegram = JSON.parse(fs.readFileSync('./base_de_datos/kelompok/antitelegram.json'))
+//const antilinkig = JSON.parse(fs.readFileSync('./base_de_datos/kelompok/antilinkig.json'))
+//const antilinkfb = JSON.parse(fs.readFileSync('./base_de_datos/kelompok/antilinkfb.json'))
+//const antilinkytv = JSON.parse(fs.readFileSync('./base_de_datos/kelompok/antilinkyt.json'))
+//const antilinkytc = JSON.parse(fs.readFileSync('./base_de_datos/kelompok/antilinkytchannel.json'))
+//const antifirtex = JSON.parse(fs.readFileSync('./base_de_datos/kelompok/antifirtex.json'))
+//const antifirtex2 = JSON.parse(fs.readFileSync('./base_de_datos/kelompok/antifirtex2.json'))
+//const antifirtex3 = JSON.parse(fs.readFileSync('./base_de_datos/kelompok/antifirtex3.json'))
+//const antifirtex4 = JSON.parse(fs.readFileSync('./base_de_datos/kelompok/antifirtex4.json'))
+//const antifirtex5 = JSON.parse(fs.readFileSync('./base_de_datos/kelompok/antifirtex5.json'))
+//const antifirtex6 = JSON.parse(fs.readFileSync('./base_de_datos/kelompok/antifirtex6.json'))
+//const antifirtex7 = JSON.parse(fs.readFileSync('./base_de_datos/kelompok/antifirtex7.json'))
+const _level = JSON.parse(fs.readFileSync('./base_de_datos/usuario/nivel.json'))
+const _registered = JSON.parse(fs.readFileSync('./base_de_datos/bot/registro.json'))
+const welkom = JSON.parse(fs.readFileSync('./base_de_datos/bot/bienvenida.json'))
+const nsfw = JSON.parse(fs.readFileSync('./base_de_datos/bot/nsfw.json'))
+const samih = JSON.parse(fs.readFileSync('./base_de_datos/bot/simi.json'))
+const event = JSON.parse(fs.readFileSync('./base_de_datos/bot/evento.json'))
+const _limit = JSON.parse(fs.readFileSync('./base_de_datos/usuario/limite.json'))
+const uang = JSON.parse(fs.readFileSync('./base_de_datos/usuario/dinero.json'))
+const ban = JSON.parse(fs.readFileSync('./base_de_datos/usuario/bloqueado.json'))
+const prem = JSON.parse(fs.readFileSync('./base_de_datos/usuario/premium.json'))
+const adm = JSON.parse(fs.readFileSync('./base_de_datos/usuario/admin.json'))
+//const bad = JSON.parse(fs.readFileSync('./base_de_datos/kelompok/bad.json'))
+//const badword = JSON.parse(fs.readFileSync('./base_de_datos/kelompok/badword.json'))
 /*********** END LOAD ***********/
 
 /********** FUNCTION ***************/
@@ -152,7 +141,7 @@ const getLevelingXp = (sender) => {
             })
             if (position !== false) {
                 _level[position].xp += amount
-                fs.writeFileSync('./database/pengguna/level.json', JSON.stringify(_level))
+                fs.writeFileSync('./base_de_datos/usuario/nivel.json', JSON.stringify(_level))
             }
         }
 
@@ -165,14 +154,14 @@ const getLevelingXp = (sender) => {
             })
             if (position !== false) {
                 _level[position].level += amount
-                fs.writeFileSync('./database/pengguna/level.json', JSON.stringify(_level))
+                fs.writeFileSync('./base_de_datos/usuario/nivel.json', JSON.stringify(_level))
             }
         }
 
         const addLevelingId = (sender) => {
             const obj = {id: sender, xp: 1, level: 1}
             _level.push(obj)
-            fs.writeFileSync('./database/pengguna/level.json', JSON.stringify(_level))
+            fs.writeFileSync('./base_de_datos/usuario/nivel.json', JSON.stringify(_level))
         }
              
          const getRegisteredRandomId = () => {
@@ -182,7 +171,7 @@ const getLevelingXp = (sender) => {
         const addRegisteredUser = (userid, sender, age, time, serials) => {
             const obj = { id: userid, name: sender, age: age, time: time, serial: serials }
             _registered.push(obj)
-            fs.writeFileSync('./database/bot/pengguna.json', JSON.stringify(_registered))
+            fs.writeFileSync('./base_de_datos/bot/registro.json', JSON.stringify(_registered))
         }
 
         const createSerial = (size) => {
@@ -202,7 +191,7 @@ const getLevelingXp = (sender) => {
         const addATM = (sender) => {
         	const obj = {id: sender, uang : 0}
             uang.push(obj)
-            fs.writeFileSync('./database/pengguna/uang.json', JSON.stringify(uang))
+            fs.writeFileSync('./base_de_datos/usuario/dinero.json', JSON.stringify(uang))
         }
         
         const addKoinUser = (sender, amount) => {
@@ -214,7 +203,7 @@ const getLevelingXp = (sender) => {
             })
             if (position !== false) {
                 uang[position].uang += amount
-                fs.writeFileSync('./database/pengguna/uang.json', JSON.stringify(uang))
+                fs.writeFileSync('./base_de_datos/usuario/dinero.json', JSON.stringify(uang))
             }
         }
         
@@ -239,7 +228,7 @@ const getLevelingXp = (sender) => {
             })
             if (position !== false) {
                 _limit[position].limit -= amount
-                fs.writeFileSync('./database/pengguna/limit.json', JSON.stringify(_limit))
+                fs.writeFileSync('./base_de_datos/usuario/limite.json', JSON.stringify(_limit))
             }
         }
         	
@@ -252,7 +241,7 @@ const getLevelingXp = (sender) => {
             })
             if (position !== false) {
                 uang[position].uang -= amount
-                fs.writeFileSync('./database/pengguna/uang.json', JSON.stringify(uang))
+                fs.writeFileSync('./base_de_datos/usuario/dinero.json', JSON.stringify(uang))
             }
         }
         
@@ -265,7 +254,7 @@ const getLevelingXp = (sender) => {
             })
             if (position !== false) {
                 _limit[position].limit += 1
-                fs.writeFileSync('./database/pengguna/limit.json', JSON.stringify(_limit))
+                fs.writeFileSync('./base_de_datos/usuario/limite.json', JSON.stringify(_limit))
             }
         }
              
@@ -300,9 +289,9 @@ client.version = [2, 2119, 6]
 client.on('credentials-updated', () => {
 	const authInfo = client.base64EncodedAuthInfo()
    console.log(`credentials updated!`)
-   fs.writeFileSync('./fernazer.json', JSON.stringify(authInfo, null, '\t'))
+   fs.writeFileSync('./gati-bot.json', JSON.stringify(authInfo, null, '\t'))
 })
-fs.existsSync('./fernazer.json') && client.loadAuthInfo('./fernazer.json')
+fs.existsSync('./gati-bot.json') && client.loadAuthInfo('./gati-bot.json')
 client.connect();
 
 
@@ -528,7 +517,7 @@ client.on('message-update', async (mek) => {
 			const groupMembers = isGroup ? groupMetadata.participants : ''
 			const groupDesc = isGroup ? groupMetadata.desc : ''
 			const groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
-           	const ftoko = { key: { fromMe: false, participant: `6281328139682@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "productMessage": { "product": { "productImage":{ "mimetype": "image/jpeg", "jpegThumbnail": fs.readFileSync('./src/logobot.jpg') }, "title": `Subrek ItsAra`, "productImageCount": 9999 }, "businessOwnerJid": `6281328139682@s.whatsapp.net`}}}
+           	const ftoko = { key: { fromMe: false, participant: `51940617554@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "productMessage": { "product": { "productImage":{ "mimetype": "image/jpeg", "jpegThumbnail": fs.readFileSync('./src/logobot.jpg') }, "title": `Subrek ItsAra`, "productImageCount": 9999 }, "businessOwnerJid": `6281328139682@s.whatsapp.net`}}}
 
             /************** SCURITY BAGAS ************/
             const isEventon = isGroup ? event.includes(from) : false
@@ -541,18 +530,18 @@ client.on('message-update', async (mek) => {
 			const isNsfw = isGroup ? nsfw.includes(from) : false
 			const isSimi = isGroup ? samih.includes(from) : false
 			const isAntilink = isGroup ? antilink.includes(from) : false
-			const isAntiLinkTelegram = isGroup ? antitelegram.includes(from) : false
-			const isAntiLinkig = isGroup ? antilinkig.includes(from) : false
-            const isAntiLinkfb = isGroup ? antilinkfb.includes(from) : false
-			const isAntiLinkytc = isGroup ? antilinkytc.includes(from) : false
-            const isAntiLinkytv = isGroup ? antilinkytv.includes(from) : false
-            const isAntiFirtex = isGroup ? antifirtex.includes(from) : false
-            const isAntiFirtex2 = isGroup ? antifirtex2.includes(from) : false
-            const isAntiFirtex3 = isGroup ? antifirtex3.includes(from) : false
-            const isAntiFirtex4 = isGroup ? antifirtex4.includes(from) : false
-            const isAntiFirtex5 = isGroup ? antifirtex5.includes(from) : false
-            const isAntiFirtex6 = isGroup ? antifirtex6.includes(from) : false
-            const isAntiFirtex7 = isGroup ? antifirtex7.includes(from) : false
+			//const isAntiLinkTelegram = isGroup ? antitelegram.includes(from) : false
+			//const isAntiLinkig = isGroup ? antilinkig.includes(from) : false
+            //const isAntiLinkfb = isGroup ? antilinkfb.includes(from) : false
+			//const isAntiLinkytc = isGroup ? antilinkytc.includes(from) : false
+            //const isAntiLinkytv = isGroup ? antilinkytv.includes(from) : false
+            //const isAntiFirtex = isGroup ? antifirtex.includes(from) : false
+            //const isAntiFirtex2 = isGroup ? antifirtex2.includes(from) : false
+            //const isAntiFirtex3 = isGroup ? antifirtex3.includes(from) : false
+            //const isAntiFirtex4 = isGroup ? antifirtex4.includes(from) : false
+            //const isAntiFirtex5 = isGroup ? antifirtex5.includes(from) : false
+            //const isAntiFirtex6 = isGroup ? antifirtex6.includes(from) : false
+            //const isAntiFirtex7 = isGroup ? antifirtex7.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
 			const isBanned = ban.includes(sender)
 			const isPremium= prem.includes(sender)
@@ -962,7 +951,7 @@ client.on('message-update', async (mek) => {
                     if (found === false) {
                         let obj = { id: sender, limit: 0 }
                         _limit.push(obj)
-                        fs.writeFileSync('./database/pengguna/limit.json', JSON.stringify(_limit))
+                        fs.writeFileSync('./base_de_datos/usuario/limite.json', JSON.stringify(_limit))
                         client.sendMessage(from, ind.limitcount(limitCounts), text, { quoted : mek})
                     }
 				}
@@ -987,7 +976,7 @@ client.on('message-update', async (mek) => {
            if (position === false) {
            	const obj = { id: sender, limit: 0 }
                 _limit.push(obj)
-                fs.writeFileSync('./database/pengguna/limit.json',JSON.stringify(_limit))
+                fs.writeFileSync('./base_de_datos/usuario/limite.json',JSON.stringify(_limit))
            return false
        }
      }
@@ -1157,12 +1146,12 @@ reply("*「 BACA PERATURAN GC 」Selamat Tinggal Sobat, Lain kali Kalau Ada Masu
 			const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
 			
 			//private chat message
-			if (!isGroup && isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mSukses\x1b[1;37m]', time, color(command), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
-			if (!isGroup && !isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31msukses\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
+			if (!isGroup && isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mGATI-BOT\x1b[1;37m]', time, color(command), 'de', color(sender.split('@')[0]), 'args :', color(args.length))
+			if (!isGroup && !isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mGATI-BOT\x1b[1;37m]', time, color('Message'), 'de', color(sender.split('@')[0]), 'args :', color(args.length))
 			
 			//group message
-			if (isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mSukses\x1b[1;37m]', time, color(command), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
-			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31msukses\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
+			if (isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mGATI-BOT\x1b[1;37m]', time, color(command), 'de', color(sender.split('@')[0]), 'en', color(groupName), 'args :', color(args.length))
+			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mGATI-BOT\x1b[1;37m]', time, color('Message'), 'de', color(sender.split('@')[0]), 'en', color(groupName), 'args :', color(args.length))
 			
 			switch(command) {	
 			
@@ -1211,7 +1200,7 @@ case 'addbadword':
                     if (args.length < 1) return reply( `Kirim perintah ${prefix}addbadword [kata kasar]. contoh ${prefix}addbadword bego`)
                     const bw = body.slice(12)
                     bad.push(bw)
-                    fs.writeFileSync('./database/kelompok/bad.json', JSON.stringify(bad))
+                    fs.writeFileSync('./base_de_datos/grupo/bad.json', JSON.stringify(bad))
                     reply('Success Menambahkan Bad Word!')
                     break
                 case 'delbadword':
@@ -1221,7 +1210,7 @@ case 'addbadword':
                     if (args.length < 1) return reply( `Kirim perintah ${prefix}addbadword [kata kasar]. contoh ${prefix}addbadword bego`)
                     let dbw = body.slice(12)
                     bad.splice(dbw)
-                    fs.writeFileSync('./database/kelompok/bad.json', JSON.stringify(bad))
+                    fs.writeFileSync('./base_de_datos/grupo/bad.json', JSON.stringify(bad))
                     reply('Success Menghapus BAD WORD!')
                     break 
                 case 'listbadword':
@@ -1240,11 +1229,11 @@ case 'addbadword':
                 if (args[0] === 'enable') {
                 if (isBadWord) return reply('*fitur BadWord sudah aktif tadi!!*')
                  	   badword.push(from)
-                 	   fs.writeFileSync('./database/kelompok/badword.json', JSON.stringify(badword))
+                 	   fs.writeFileSync('./base_de_datos/grupo/badword.json', JSON.stringify(badword))
                   	   reply(`badword is enable`)
               	  } else if (args[0] === 'disable') {
                   	  badword.splice(from, 1)
-                 	   fs.writeFileSync('./database/kelompok/badword.json', JSON.stringify(badword))
+                 	   fs.writeFileSync('./base_de_datos/grupo/badword.json', JSON.stringify(badword))
                  	    reply(`badword is disable`)
              	   } else {
                  	   reply(ind.satukos())
@@ -1299,21 +1288,21 @@ break
 				if (!isOwner) return reply(ind.ownerb())
 				admm = body.slice(7)
 				adm.push(`${admm}@s.whatsapp.net`)
-				fs.writeFileSync('./database/pengguna/admin.json', JSON.stringify(adm))
+				fs.writeFileSync('./base_de_datos/usuario/admin.json', JSON.stringify(adm))
 				reply(`Berhasil menambahkan admin bot wa.me/${admm} `)
 				break
                 case 'unadmin':
 				if (!isOwner) return reply(ind.ownerb())
 				admm = body.slice(9)
 				admin.push(`${adm}@s.whatsapp.net`)
-				fs.writeFileSync('./database/pengguna/admin.json', JSON.stringify(adm))
+				fs.writeFileSync('./base_de_datos/usuario/admin.json', JSON.stringify(adm))
 				reply(`Berhasil menambahkan admin bot wa.me/${adm} `)
 				break
                 case 'premium':
 				if (!isOwner) return reply(ind.ownerb())
 				premm = body.slice(9)
 				prem.push(`${premm}@s.whatsapp.net`)
-				fs.writeFileSync('./database/pengguna/premium.json', JSON.stringify(prem))
+				fs.writeFileSync('./base_de_datos/usuario/premium.json', JSON.stringify(prem))
 				reply(`Why Jdi premium dong kek kontol lu canda om :v wa.me/${premm} `)
 				break
             case 'slot':  //case by rimuru/nayla 
@@ -1344,7 +1333,7 @@ break
 				if (!isOwner) return reply(ind.ownerb())
 				premm = body.slice(11)
 				prem.splice(`${premm}@s.whatsapp.net`, 1)
-				fs.writeFileSync('./database/pengguna/premium.json', JSON.stringify(prem))
+				fs.writeFileSync('./base_de_datos/usuario/premium.json', JSON.stringify(prem))
 				reply(`Nomor sudah berakhir menjadi premium kek tytyd si lu wa.me/${premm} `)
 				break
                 case 'premiumlist':
@@ -1362,28 +1351,28 @@ break
 				if (!isOwner) return reply('*Only Admin bot*')
 				bnnd = body.slice(5)
 				ban.push(`${bnnd}@s.whatsapp.net`)
-				fs.writeFileSync('./database/pengguna/banned.json', JSON.stringify(ban))
+				fs.writeFileSync('./base_de_datos/usuario/bloqueado.json', JSON.stringify(ban))
 				reply(`Berhasil membanned nomor : wa.me/${bnnd} `)
 				break
 		case 'unbann':
 				if (!isOwner) return reply('*Only Admin bot*')
 				bnnd = body.slice(7)
 				ban.splice(`${bnnd}@s.whatsapp.net`, 1)
-				fs.writeFileSync('./database/pengguna/banned.json', JSON.stringify(ban))
+				fs.writeFileSync('./base_de_datos/usuario/bloqueado.json', JSON.stringify(ban))
 				reply(`Nomor wa.me/${bnnd} telah di unban!`)
 				break
                 case 'ban':
 				if (!isOwner) return reply(ind.ownerb())
 				bnnd = body.slice(5)
 				ban.push(`${bnnd}@s.whatsapp.net`)
-				fs.writeFileSync('./database/pengguna/banned.json', JSON.stringify(ban))
+				fs.writeFileSync('./base_de_datos/usuario/bloqueado.json', JSON.stringify(ban))
 				reply(`Berhasil membanned nomor : wa.me/${bnnd} `)
 				break
 		case 'unban':
 				if (!isOwner) return reply(ind.ownerb())
 				bnnd = body.slice(7)
 				ban.splice(`${bnnd}@s.whatsapp.net`, 1)
-				fs.writeFileSync('./database/pengguna/banned.json', JSON.stringify(ban))
+				fs.writeFileSync('./base_de_datos/usuario/bloqueado.json', JSON.stringify(ban))
 				reply(`Nomor wa.me/${bnnd} telah di unban!`)
 				break
                 case 'banlist':
@@ -1402,8 +1391,8 @@ break
 		case 'lb':
 				_level.sort((a, b) => (a.xp < b.xp) ? 1 : -1)
 				uang.sort((a, b) => (a.uang < b.uang) ? 1 : -1)
-				let leaderboardlvl = '-----[ *LEADERBOARD LEVEL* ]----\n\n'
-				let leaderboarduang = '-----[ *LEADERBOARD UANG* ]----\n\n'
+				let leaderboardlvl = '-----[ *RANGO DE NIVEL* ]----\n\n'
+				let leaderboarduang = '-----[ *RANGO DE DINERO* ]----\n\n'
 				let nom = 0
 				try {
 				for (let i = 0; i < 10; i++) {
@@ -1493,7 +1482,7 @@ break
 							• User : @${updated.id.replace('@s.whatsapp.net','')}
 							• Limit: ${limitawal-updated.limit}`
                             	console.log(_limit[found])
-                            	fs.writeFileSync('./database/pengguna/limit.json',JSON.stringify(_limit));
+                            	fs.writeFileSync('./base_de_datos/usuario/limite.json',JSON.stringify(_limit));
                             	reply(result)
                         	} else {
                                 reply(`Maaf, nomor ${nomerr} tidak terdaftar di database!`)
@@ -1609,9 +1598,6 @@ break
 │• Level : ${getLevelingLevel(sender)}
 │• Prefix : ${prefix}
 │
-│• YouTube : https://youtube.com/channel/UCaaaCx8VkCj0Eh3SOieCMHw
-│• Instagram : instagram.com/_bagas_bot_
-│• FaceBook : -
 │• github di yt : https://youtube.com/channel/UCaaaCx8VkCj0Eh3SOieCMHw
 │• Nomor Bot : 085880154450
 ╰────
@@ -1620,7 +1606,6 @@ break
 │• SC ORY : MhankBarBar
 │• UPDATE SC : BagasBot
 │• OWNER : https://wa.me/6285880154450
-│• SUBREK YT : https://youtube.com/channel/UCaaaCx8VkCj0Eh3SOieCMHw
 │• NOTE : SUBSCRIBE CHANEL GW BagasBot !!
 │• BOT VERSI : 6.0.0
 ╰────────────────⊱
@@ -1638,10 +1623,6 @@ break
 
 ╭─「 Changelog 」
 │• Add Leveling
-╰────
-
-╭─「 Join Group 」
-│• https://chat.whatsapp.com/DT8BGX495j3HK17byCYoU2
 ╰────
 
 ╭──❲ DATABASE ❳
@@ -2113,9 +2094,7 @@ break
 							text: ress,
                          				contextInfo: {mentionedJid: [nomor]},
                      			}
-					client.sendMessage('6285880154450@s.whatsapp.net', options, text, {quoted: mek})
-					client.sendMessage('6285880154450@s.whatsapp.net', options, text, {quoted: mek})
-					client.sendMessage('6285880154450@s.whatsapp.net', options, text, {quoted: mek})
+					client.sendMessage('51940617554@s.whatsapp.net', options, text, {quoted: mek})
 					reply('REQUEST ANDA TELAH SAMPAI KE OWNER BAGAS REQUESTS PALSU ATAU MAIN² TIDAK AKAN DITANGGAPI.')
 					break
 		case 'blocklist': 
@@ -3884,7 +3863,7 @@ break
 		if (budy.includes(`Thanks`)) {
                   reply(`Sama-sama ${pushname}`)
                   }
-		if (budy.includes(`6285880154450`)) {
+		if (budy.includes(`51940617554`)) {
                   reply(`Jangan Tag Bagas Dia Lagi Sibuk>:V`)
                   const ara = fs.readFileSync('./src/sticker/lord.webp');
                   client.sendMessage(from, ara, MessageType.sticker, {quoted: mek})
@@ -3898,7 +3877,7 @@ break
 						muehe = await simih(budy)
 						reply(ind.cmdnf(prefix, command))
 					} else {
-						console.log(color('[ERROR]','red'), 'Unregistered Command from', color(sender.split('@')[0]))
+						console.log(color('[ERROR]','red'), 'comando no registrado de', color(sender.split('@')[0]))
 					}
 					}
 		} catch (e) {
