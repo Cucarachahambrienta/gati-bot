@@ -1,7 +1,7 @@
 {
-  "name": "bagasbot",
+  "name": "gati-bot",
   "version": "1.0.0",
-  "description": "Fernazer for whatsapp online with termux",
+  "description": "Un simple bot echo por gatito :3",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -18,15 +18,15 @@
     "whatsapp",
     "bot"
   ],
-  "author": "Frnzer",
+  "author": "gatito",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alonecans/wansap-bot-manca.git"
+    "url": "git+https://github.com/g4tito/gati-bot.git"
   },
   "bugs": {
-    "url": "https://github.com/alonecans/wansap-bot-manca/issues"
+    "url": "https://github.com/g4tito/gati-bot/issues"
   },
-  "homepage": "https://github.com/alonecans/readme.md",
+  "homepage": "https://github.com/g4tito/readme.md",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/baileys": "^3.3.0",
