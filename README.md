@@ -18,12 +18,12 @@
 - [📥Instalación](#⬇️-Instalación)
 - [🐱Contactos](#🥺-Contacto)
 
----
+---------
 ## 🔄 Atualizar automaticamente
 ```> cd gati-bot
 > sh update.sh```
 
----
+---------
 
 ## ⬇️ Instalación
 
@@ -40,7 +40,7 @@
 # reiniciar el bot automáticamente en caso de crasheo
 ```> sh start.sh```
 
----
+---------
 
 ## 🤝 Contacto
 
