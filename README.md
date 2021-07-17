@@ -1,4 +1,4 @@
-⁹# 🐱gaтι-вфт🤖
+# 🐱gaтι-вфт🤖
 <h1 align="center">
     <p>
         <img src= "almacenamiento/imajenes/gati_2.jpg">
@@ -14,9 +14,9 @@
     </p>
 </h1>
 
-## 🤓 Índice
-- [📥Instalación](# ⬇️ Instalación en termux)
-- [🐱Contactos](# 🤝 Contacto)
+## 📦 Índice
+- [📥Instalación](##-⬇️-Instalación-en-termux)
+- [🐱Contactos](##-🤝-Contacto)
 
 ---------
 ## 🔄 Atualizar automaticamente
