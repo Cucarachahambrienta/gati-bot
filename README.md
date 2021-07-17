@@ -14,12 +14,12 @@
     </p>
 </h1>
 
-# 🤓 Índice
+## 🤓 Índice
 - [📥Instalación](#⬇️-Instalación)
 - [🐱Contactos](#🥺-Contacto)
 
 ---------
-# 🔄 Atualizar automaticamente
+## 🔄 Atualizar automaticamente
 
 ```
 > cd gati-bot
@@ -28,15 +28,18 @@
 
 ---------
 
-# ⬇️ Instalación
+## ⬇️ Instalación en termux
 
 [Termux](https://play.google.com/store/apps/details?id=com.termux&hl=pt_BR&gl=US)
 
-```
+```bash
+> pkg update -y
+> pkg upgrade -y
+> pkg install -git
 > git clone https://github.com/g4tito/gati-bot
 > cd gati-bot
 > bash install.sh
-> npm install
+> npm start
 ```
 
 #### iniciar el bot manualmente
@@ -53,7 +56,7 @@
 
 ---------
 
-# 🤝 Contacto
+## 🤝 Contacto
 
 [Whatsapp](https://api.whatsapp.com/send/?phone=%2B51940617554&text&app_absent=0)
 
