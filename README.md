@@ -7,7 +7,7 @@
 ---------
 <h1 align="center">
     <p>
-        <img src= "almacenamiento/imajenes/gati_2.jpg">
+        <img src= "almacenamiento/imagenes/gati_2.jpg">
     </p>
     <p align="center">
         <a href="#"><img title="whatsapp-bot-termux" src="https://img.shields.io/badge/-WHATSAPP--BOT--TERMUX-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
