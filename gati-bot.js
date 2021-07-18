@@ -58,7 +58,8 @@ memberlimit = 10 //terserah mau ganti apa gak
 namabot = 'gati-bot'
 cr = '*「 gati-bot 」*' //ganti nama bot
 ftoko = "gati-bot" //ganti nama bot
-lolkey = '682aeab645ed61cf137cf971' //apikey nya beli sendiri
+lolkey = '40cd5b6566bef10af1425f0f' //apikey nya beli sendiri
+apixteam = ''
 apivhtear = 'YT_GATI-BOT' //apikey beli sendiri
 /******** NUMERO DEL CREADOR *********/
 
@@ -272,10 +273,10 @@ function kyun(seconds){
 }
 /********** FUNCTION ***************/
 
-console.log(color('========================================================','red'))==== 
+console.log(color('===========================================================','red'))
 console.log(color('============[ GRACIAS POR INSTALAR A GATI-BOT ]============','yellow'))
-console.log(color('==============[ UN BOT ESCHO CON MUCHO ❤ ]==============','yellow'))
-console.log(color('========================================================','red'))
+console.log(color('==============[ UN BOT ESCHO CON MUCHO ❤ ]=================','yellow'))
+console.log(color('===========================================================','red'))
 const client = new WAConnection()
 //WWEB 
 client.version = [2, 2119, 6]
@@ -1582,350 +1583,292 @@ break
 		case 'help': 
 		case 'menu':
             //Saya Mohon Jangan hapus list update gue ya cape2 ngeupdate sma ngefix bug nama fernazer di hapus semua mikir lah lu cuman numpang_-
-            costum(`*L o a d i n g*`, text, tescuk, ari)
+            costum(`*L o a d i n g . . .*`, text, tescuk, ari)
             if (!isRegistered) return reply( ind.noregis())
-            loli = fs.readFileSync (`./mp3/loli.mp3`)
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
                     wew = fs.readFileSync(`./src/logobot.jpg`)
                       lzain = `
-╭─「 INFO BAGASBOT 」
-│
-│• Nama : ${pushname}
-│• Exp : ${getLevelingXp(sender)}
-│• Nomer :  wa.me/${sender.split("@")[0]}
-│
-│• Rank : ${role}
-│• Level : ${getLevelingLevel(sender)}
-│• Prefix : ${prefix}
-│
-│• github di yt : https://youtube.com/channel/UCaaaCx8VkCj0Eh3SOieCMHw
-│• Nomor Bot : 085880154450
-╰────
+┌─────────────┐
+├─「 *INFO DEL USUARIO* 」
+│➛Nombre : ${pushname}
+│➛Exp : ${getLevelingXp(sender)}
+│➛Numero :  wa.me/${sender.split("@")[0]}
+│➛Rango : ${role}
+│➛Nivel : ${getLevelingLevel(sender)}
+└─────────────╮
+┌─────────────╯
+├─「 *INFO DEL BOT* 」
+│➛Nombre : gati-bot
+│➛Numero : wa.me/51988050859
+│➛Prefijo : 「 ${prefix} 」
+│➛Vercion : 1.1.7
+└─────────────┘
 
-╭──❲ DEVELOPER ❳
-│• SC ORY : MhankBarBar
-│• UPDATE SC : BagasBot
-│• OWNER : https://wa.me/6285880154450
-│• NOTE : SUBSCRIBE CHANEL GW BagasBot !!
-│• BOT VERSI : 6.0.0
-╰────────────────⊱
+╭──────────────
+│[🐈‍⬛] *github:*
+│ github.com/g4tito/gati-bot
+╰──────────────
 
-╭──❲ MAIN ❳
-│• ${prefix}daftar
-│• ${prefix}menu
-│• ${prefix}owner
-│• ${prefix}request [fitur]
-╰────────────────⊱
+┌「 *MENÚ* 」
+└────────╮
+┏╾───────╯
+│▪︎${prefix}daftar
+│▪︎${prefix}menu
+│▪︎${prefix}owner
+│▪︎${prefix}request [texto]
+└──┘
 
-╭─「 Jadwal Aktif 」
-│• 24 Jam [ Masih Bug ]
-╰────
+┌「 *STICKER* 」
+└────────╮
+┏╾───────╯
+│▪︎${prefix}toimg
+│▪︎${prefix}sticker
+└──┘
 
-╭─「 Changelog 」
-│• Add Leveling
-╰────
+┌「 *EXP LIMITE* 」
+└────────╮
+┏╾───────╯
+│▪︎${prefix}dompet
+│▪︎${prefix}buypremiumlimit
+│▪︎${prefix}buylimit
+│▪︎${prefix}lb
+│▪︎${prefix}leaderboard
+│▪︎$prefix}limit
+│▪︎${prefix}transfer
+│▪︎${prefix}giftlimit
+│▪︎${prefix}kalkulator
+│▪︎${prefix}level
+│▪︎${prefix}profile
+└──┘
 
-╭──❲ DATABASE ❳
-│• ${prefix}ocr
-╰────────────────⊱
+┌「 *BUSCADOR* 」
+└────────╮
+┏╾───────╯
+│▪︎${prefix}gimage
+│▪︎${prefix}wallpapersearch
+│▪︎${prefix}wallpapersearch2
+│▪︎${prefix}konachan
+│▪︎${prefix}gimage2
+└──┘
 
-╭──❲ BELI INDOMIE ❳
-│• ${prefix}donate
-│• ${prefix}donasi
-╰────────────────⊱
+┌「 *GRUPO* 」
+└────────╮
+┏╾───────╯
+│▪︎${prefix}welcome [1/0] 
+│▪︎${prefix}nsfw [1/0]
+│▪︎${prefix}antilink [1/0]
+│▪︎${prefix}leveling [1/0]
+│▪︎${prefix}nobadword [1/0]
+│▪︎${prefix}simih [1/0] 
+│▪︎${prefix}promote [@tag]
+│▪︎${prefix}demote [@tag]
+│▪︎${prefix}tagall
+│▪︎${prefix}listadmin
+│▪︎${prefix}premiumlist
+│▪︎${prefix}banlist
+│▪︎${prefix}blocklist
+│▪︎${prefix}linkgc
+│▪︎${prefix}mining
+│▪︎${prefix}hidetag
+│▪︎${prefix}grouplist
+│▪︎${prefix}add [62]
+│▪︎${prefix}kick [@tag]
+│▪︎${prefix}setname
+│▪︎${prefix}setdesc
+│▪︎${prefix}listadmin
+│▪︎${prefix}linkgc
+│▪︎${prefix}leave
+│▪︎${prefix}mining
+│▪︎${prefix}level
+│▪︎${prefix}grup [buka/tutup]
+│▪︎${prefix}wame
+│▪︎${prefix}wa.me
+└──┘
 
-╭──❲ STIKER MENU ❳
-│• ${prefix}toimg
-│• ${prefix}sticker [udh work]
-╰───────────────
+┌「 *ANTILINK* 」
+└────────╮
+┏╾───────╯
+│▪︎${prefix}antilinkyoutube-v [1/0]
+│▪︎${prefix}antilinktelegram [1/0]
+│▪︎${prefix}antilinkyoutube-c [1/b]
+└──┘
 
-╭──❲ Open World ❳
-│• ${prefix}petualang [jakarta]
-│• ${prefix}adventure [air]
-│• ${prefix}inventori [1]
-╰────────────────⊱
+┌「 *CREADOR* 」
+└────────╮
+┏╾───────╯
+│▪︎${prefix}bc
+│▪︎${prefix}nobadword
+│▪︎${prefix}addbadword
+│▪︎${prefix}delbadword
+│▪︎${prefix}bcgc
+│▪︎${prefix}kickall [lngsung kebened]
+│▪︎${prefix}setreply
+│▪︎${prefix}setprefix
+│▪︎${prefix}clearall
+│▪︎${prefix}block
+│▪︎${prefix}unblock
+│▪︎${prefix}leave
+│▪︎${prefix}event [1/0]
+│▪︎${prefix}clone
+│▪︎${prefix}del
+│▪︎${prefix}ban [tag]
+│▪︎${prefix}unban 
+│▪︎${prefix}unbann [tag]
+│▪︎${prefix}setreplyy
+│▪︎${prefix}premium [tag]
+│▪︎${prefix}unpremium [tag] 
+│▪︎${prefix}admin
+│▪︎${prefix}unadmin
+│▪︎${prefix}setlimit
+│▪︎${prefix}setmemlimit 
+└──┘
 
-╭──❲ EXP LIMIT ❳
-│• ${prefix}dompet
-│• ${prefix}buypremiumlimit
-│• ${prefix}buylimit
-│• ${prefix}lb
-│• ${prefix}leaderboard
-│• $prefix}limit
-│• ${prefix}transfer
-│• ${prefix}giftlimit
-│• ${prefix}kalkulator
-│• ${prefix}level
-│• ${prefix}profile
-╰────────────────⊱
+┌「 *TEXT PRO ME* 」
+└────────╮
+┏╾───────╯
+│▪︎${prefix}blackpink
+│▪︎${prefix}neon
+│▪︎${prefix}greenneon
+│▪︎${prefix}advanceglow
+│▪︎${prefix}futureneon
+│▪︎${prefix}sandwriting
+│▪︎${prefix}sandsummer
+│▪︎${prefix}sandengraved
+│▪︎${prefix}metaldark
+│▪︎${prefix}neonlight
+│▪︎${prefix}holographic
+│▪︎${prefix}text1917
+│▪︎${prefix}minion
+│▪︎${prefix}deluxesilver
+│▪︎${prefix}newyearcard
+│▪︎${prefix}bloodfrosted
+│▪︎${prefix}halloween
+│▪︎${prefix}jokerlogo
+│▪︎${prefix}fireworksparkle
+│▪︎${prefix}natureleaves
+│▪︎${prefix}bokeh
+│▪︎${prefix}toxic
+│▪︎${prefix}strawberry
+│▪︎${prefix}box3d
+│▪︎${prefix}roadwarning
+│▪︎${prefix}breakwall
+│▪︎${prefix}icecold
+│▪︎${prefix}luxury
+│▪︎${prefix}cloud
+│▪︎${prefix}summersand
+│▪︎${prefix}horrorblood
+│▪︎${prefix}thunder
+│▪︎${prefix}pornhub
+│▪︎${prefix}glitch
+│▪︎${prefix}avenger
+│▪︎${prefix}space
+│▪︎${prefix}ninjalogo
+│▪︎${prefix}marvelstudio
+│▪︎${prefix}lionlogo
+│▪︎${prefix}wolflogo
+│▪︎${prefix}steel3d
+│▪︎${prefix}wallgravity
+└──┘
 
-╭──❲ SEARCHING MENU ❳
-│• ${prefix}gimage [fix eror]
-│• ${prefix}wallpapersearch [fix eror]
-│• ${prefix}wallpapersearch2 [fix eror]
-│• ${prefix}konachan [fix eror]
-│• ${prefix}gimage2 [fix eror]
-╰────────────────⊱
+┌「 *PHOTOT OXY* 」
+└────────╮
+┏╾───────╯
+│▪︎${prefix}shadow
+│▪︎${prefix}cup
+│▪︎${prefix}cup1
+│▪︎${prefix}romance
+│▪︎${prefix}smoke
+│▪︎${prefix}burnpaper
+│▪︎${prefix}lovemessage
+│▪︎${prefix}undergrass
+│▪︎${prefix}love
+│▪︎${prefix}coffe
+│▪︎${prefix}woodheart
+│▪︎${prefix}woodenboard
+│▪︎${prefix}summer3d
+│▪︎${prefix}wolfmetal
+│▪︎${prefix}nature3d
+│▪︎${prefix}underwater
+│▪︎${prefix}golderrose
+│▪︎${prefix}summernature
+│▪︎${prefix}letterleaves
+│▪︎${prefix}glowingneon
+│▪︎${prefix}fallleaves
+│▪︎${prefix}flamming
+│▪︎${prefix}harrypotter
+│▪︎${prefix}carvedwood
+│▪︎${prefix}tiktok
+│▪︎${prefix}arcade8bit
+│▪︎${prefix}battlefield4
+│▪︎${prefix}pubg
+└──┘
 
-╭──❲ GROUP MENU ❳
-│• ${prefix}welcome [1/0] 
-│• ${prefix}nsfw [1/0]
-│• ${prefix}antilink [1/0]
-│• ${prefix}leveling [1/0]
-│• ${prefix}nobadword [1/0]
-│• ${prefix}simih [1/0] 
-│• ${prefix}promote [@tag]
-│• ${prefix}demote [@tag]
-│• ${prefix}tagall
-│• ${prefix}listadmin
-│• ${prefix}premiumlist
-│• ${prefix}banlist
-│• ${prefix}blocklist
-│• ${prefix}linkgc
-│• ${prefix}mining
-│• ${prefix}hidetag
-│• ${prefix}grouplist
-│• ${prefix}add [62]
-│• ${prefix}kick [@tag]
-│• ${prefix}setname
-│• ${prefix}setdesc
-│• ${prefix}listadmin
-│• ${prefix}linkgc
-│• ${prefix}leave
-│• ${prefix}mining
-│• ${prefix}level
-│• ${prefix}grup [buka/tutup]
-│• ${prefix}wame
-│• ${prefix}wa.me
-╰────────────────⊱
+┌「 *EPHOTO 360* 」
+└────────╮
+┏╾───────╯
+│▪︎${prefix}wetglass
+│▪︎${prefix}multicolor3d
+│▪︎${prefix}watercolor
+│▪︎${prefix}luxurygold
+│▪︎${prefix}galaxywallpaper
+│▪︎${prefix}lighttext
+│▪︎${prefix}beautifulflower
+│▪︎${prefix}puppycute
+│▪︎${prefix}royaltext
+│▪︎${prefix}heartshaped
+│▪︎${prefix}birthdaycake
+│▪︎${prefix}galaxystyle
+│▪︎${prefix}hologram3d
+│▪︎${prefix}greenneon
+│▪︎${prefix}glossychrome
+│▪︎${prefix}greenbush
+│▪︎${prefix}metallogo
+│▪︎${prefix}noeltext
+│▪︎${prefix}glittergold
+│▪︎${prefix}textcake
+│▪︎${prefix}starsnight
+│▪︎${prefix}wooden3d
+│▪︎${prefix}textbyname
+│▪︎${prefix}writegalacy
+│▪︎${prefix}galaxybat
+│▪︎${prefix}snow3d
+│▪︎${prefix}birthdayday
+│▪︎${prefix}goldplaybutton
+│▪︎${prefix}silverplaybutton
+│▪︎${prefix}freefire
+└──┘
 
-╭──❲ ANTILINK SOSMED ❳
-│• ${prefix}antilinkyoutube-v [1/0]
-│• ${prefix}antilinktelegram [1/0]
-│• ${prefix}antilinkyoutube-c [1/b]
-╰────────────────⊱
+┌「 *RANDOM* 」
+└────────╮
+┏╾───────╯
+│▪︎${prefix}waifu
+│▪︎${prefix}husbu
+│▪︎${prefix}loli
+│▪︎${prefix}elf
+└──┘
 
-╭──❲ OWNER MENU ❳
-│• ${prefix}bc
-│• ${prefix}nobadword
-│• ${prefix}addbadword
-│• ${prefix}delbadword
-│• ${prefix}bcgc
-│• ${prefix}kickall [lngsung kebened]
-│• ${prefix}setreply
-│• ${prefix}setprefix
-│• ${prefix}clearall
-│• ${prefix}block
-│• ${prefix}unblock
-│• ${prefix}leave
-│• ${prefix}event [1/0]
-│• ${prefix}clone
-│• ${prefix}del
-│• ${prefix}ban [tag]
-│• ${prefix}unban 
-│• ${prefix}unbann [tag]
-│• ${prefix}setreplyy
-│• ${prefix}premium [tag]
-│• ${prefix}unpremium [tag] 
-│• ${prefix}admin
-│• ${prefix}unadmin
-│• ${prefix}setlimit
-│• ${prefix}setmemlimit 
-╰────────────────⊱
+┌「 *FUN MENU* 」
+└────────╮
+┏╾───────╯
+│▪︎${prefix}truth 
+│▪︎${prefix}dare 
+│▪︎${prefix}slot
+│▪︎${prefix}mutual
+└──┘
 
-╭──❲ TEXT PRO ME/APIKEY ❳
-│• ${prefix}blackpink text
-│• ${prefix}neon text
-│• ${prefix}greenneon text
-│• ${prefix}advanceglow text
-│• ${prefix}futureneon text
-│• ${prefix}sandwriting text
-│• ${prefix}sandsummer text
-│• ${prefix}sandengraved text
-│• ${prefix}metaldark text
-│• ${prefix}neonlight text
-│• ${prefix}holographic text
-│• ${prefix}text1917 text
-│• ${prefix}minion text
-│• ${prefix}deluxesilver text
-│• ${prefix}newyearcard text
-│• ${prefix}bloodfrosted text
-│• ${prefix}halloween text
-│• ${prefix}jokerlogo text
-│• ${prefix}fireworksparkle text
-│• ${prefix}natureleaves text
-│• ${prefix}bokeh text
-│• ${prefix}toxic text
-│• ${prefix}strawberry text
-│• ${prefix}box3d text
-│• ${prefix}roadwarning text
-│• ${prefix}breakwall text
-│• ${prefix}icecold text
-│• ${prefix}luxury text
-│• ${prefix}cloud text
-│• ${prefix}summersand text
-│• ${prefix}horrorblood text
-│• ${prefix}thunder text
-│• ${prefix}pornhub text1 text2
-│• ${prefix}glitch text1 text2
-│• ${prefix}avenger text1 text2
-│• ${prefix}space text1 text2
-│• ${prefix}ninjalogo text1 text2
-│• ${prefix}marvelstudio text1 text2
-│• ${prefix}lionlogo text1 text2
-│• ${prefix}wolflogo text1 text2
-│• ${prefix}steel3d text1 text2
-│• ${prefix}wallgravity text1 text2
-╰────────────────⊱
+┌「 *OTROS* 」
+└────────╮
+┏╾───────╯
+│▪︎${prefix}ocr
+│▪︎${prefix}donate
+│▪︎${prefix}donasi
+│▪︎${prefix}ytsearch
+└──┘
 
-╭──❲ PHOTOT OXY/APIKEY ❳
-│• ${prefix}shadow text
-│• ${prefix}cup text
-│• ${prefix}cup1 text
-│• ${prefix}romance text
-│• ${prefix}smoke text
-│• ${prefix}burnpaper text
-│• ${prefix}lovemessage text
-│• ${prefix}undergrass text
-│• ${prefix}love text
-│• ${prefix}coffe text
-│• ${prefix}woodheart text
-│• ${prefix}woodenboard text
-│• ${prefix}summer3d text
-│• ${prefix}wolfmetal text
-│• ${prefix}nature3d text
-│• ${prefix}underwater text
-│• ${prefix}golderrose text
-│• ${prefix}summernature text
-│• ${prefix}letterleaves text
-│• ${prefix}glowingneon text
-│• ${prefix}fallleaves text
-│• ${prefix}flamming text
-│• ${prefix}harrypotter text
-│• ${prefix}carvedwood text
-│• ${prefix}tiktok text1 text2
-│• ${prefix}arcade8bit text1 text2
-│• ${prefix}battlefield4 text1 text2
-│• ${prefix}pubg text1 text2
-╰────────────────⊱
-
-╭──❲ EPHOTO 360 ❳
-│❀${prefix}wetglass text
-│❀${prefix}multicolor3d text
-│❀${prefix}watercolor text
-│❀${prefix}luxurygold text
-│❀${prefix}galaxywallpaper text
-│❀${prefix}lighttext text
-│❀${prefix}beautifulflower text
-│❀${prefix}puppycute text
-│❀${prefix}royaltext text
-│❀${prefix}heartshaped text
-│❀${prefix}birthdaycake text
-│❀${prefix}galaxystyle text
-│❀${prefix}hologram3d text
-│❀${prefix}greenneon text
-│❀${prefix}glossychrome text
-│❀${prefix}greenbush text
-│❀${prefix}metallogo text
-│❀${prefix}noeltext text
-│❀${prefix}glittergold text
-│❀${prefix}textcake text
-│❀${prefix}starsnight text
-│❀${prefix}wooden3d text
-│❀${prefix}textbyname text
-│❀${prefix}writegalacy text
-│❀${prefix}galaxybat text
-│❀${prefix}snow3d text
-│❀${prefix}birthdayday text
-│❀${prefix}goldplaybutton text
-│❀${prefix}silverplaybutton text
-│❀${prefix}freefire text
-╰────────────────⊱
-
-╭──❲ CEK MENU ❳
-│• ${prefix}gantengcek
-│• ${prefix}cantikcek
-│• ${prefix}jelekcek
-│• ${prefix}goblogcek
-│• ${prefix}begocek
-│• ${prefix}pintercek
-│• ${prefix}jagocek
-│• ${prefix}nolepcek
-│• ${prefix}babicek
-│• ${prefix}anjingcek
-│• ${prefix}jahatcek
-│• ${prefix}haramcek
-│• ${prefix}kontolcek
-│• ${prefix}pakboycek
-│• ${prefix}pakgirlcek
-│• ${prefix}bapercek
-│• ${prefix}sangecek
-╰────────────────⊱
-
-╭──❲ RANDOM MENU/APIKEY ❳
-│• ${prefix}waifu
-│• ${prefix}husbu
-│• ${prefix}loli
-│• ${prefix}elf
-╰────────────────⊱
-
-╭──❲ SOUND MENU ❳
-│• ${prefix}sound1
-│• ${prefix}sound2
-│• ${prefix}sound3
-│• ${prefix}sound4
-│• ${prefix}sound5
-╰────────────────⊱
-
-╭──❲ Download Menu ❳
-│• ${prefix}ytsearch
-╰────────────────⊱
-
-╭──❲ BERBURU MENU ❳
-│• ${prefix}udara [cepet]
-│• ${prefix}laut [cepet]
-│• ${prefix}darat [cepet]
-╰────────────────⊱
-
-╭──❲ FUN MENU ❳
-│• ${prefix}truth 
-│• ${prefix}dare 
-│• ${prefix}slot
-│• ${prefix}mutual
-╰────────────────⊱
-
-╭──❲ Fix REASON ❳
-│• FIX BUG ALL FITUR
-│• FITUR OWNER
-│• FITUR GRUP
-│• TAMBAHAN FITUR ANTI VIRUS & LINK
-│• WORK 100% ADA APIKEY FITUR JALAN
-╰────────────────⊱
-[ Thanks Big To ]
- • BAGAS GANZ (Bagas Bot) 
- • ALFA GANZ (Smart Bot
- • FERNAZER
- • ARIFI RAZZAQ
- • AQULZ
- • ZEEONE OFC
- 
-[ Thanks To ]
-• ALLAH SWT
-• ORG TUA
-• MHANKBARABAR
-• GUSTI
-• FERNAZER
-• BAGAS GANZ (Bagas Bot) 
-• ALFA GANZ (Smart Bot
-• ARIFI RAZZAQ
-• AQULZZ
-• XYNNBOTZ
-• MANIK
-• ZEEONE OFC
-╭──
-│<Created By Bagas Ganz 2021>
-│<Butuh api? Beli Jan Gratisan Mulu>
-╰────────────────⊱
+╭──────────────
+│ *créditos:*
+│ ▪︎_gatito_
+╰──────────────
 `
 client.sendMessage(from, wew, image, { quoted: mek, caption: lzain })
 break
@@ -3501,8 +3444,26 @@ break
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: txt})
 					break
 
-//DOWNLOAD MENU
+//====================[ MENU DESCARGAS ]====================\\
                     
+                    case 'play':  
+		            if (!isPrem) return reply(mess.only.premium)                    	  
+                    if (!isElite) return reply(mess.only.userB)
+			        if (isLimit(sender)) return
+			        await limitAdd(sender)
+					if (args.length < 1) return reply(`*Ejemplo:* ${prefix}play DJ 30 seconds`)	
+					reply(naylachan) 				 
+					anu = await fetchJson(`https://api.xteam.xyz/dl/play?lagu=${args[0]}&APIKEY=${apixteam}`)
+					anu1 = `*MUSICA ENCONTRADO*\n`
+                    anu1 += `➸ *Titulo* : ${anu.judul}\n`
+                    anu1 += `➸ *Tamaño* : ${anu.size}\n`
+                    anu1 += `➸ *Link* : ${anu.source}\n`
+					anu2 = await getBuffer(anu.thumbnail)
+					anu3 = await getBuffer(anu.url)
+				    nayla.sendMessage(from, anu2, image, { quoted: nay, caption: anu1 })
+					nayla.sendMessage(from, anu3, audio, { mimetype: 'audio/mp4', duration: 750, quoted: mek })
+					break
+					
                 case 'ytsearch':
                     if (args.length == 0) return reply(`Contoh: ${prefix + command} Melukis Senja`)
                     query = args.join(" ")
