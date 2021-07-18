@@ -1,4 +1,4 @@
-const help = (pushname, prefix, checATM, useLevel, useXp, requireXp) => {
+const menu = (pushname, prefix, checATM, useLevel, useXp, requireXp) => {
     return `
 ┌─────────────┐
 ├─「 *INFO DEL USUARIO* 」
@@ -283,4 +283,4 @@ const help = (pushname, prefix, checATM, useLevel, useXp, requireXp) => {
 ╰──────────────
 `
 }
-exports.help = help
+exports.menu = menu
