@@ -1,13 +1,13 @@
 exports.wait = () => {
-	return`*「 WAIT 」 SEDANG DIPROSES*`
+	return`*⏰┋Espere en proceso*\n\nsi no llega es que hubo un error`
 }
 
 exports.succes = () => {
-	return`*「 SUCCES 」*`
+	return`*「 ÉXITO 」*`
 }
 
 exports.pedo = () => {
-	return`*「 FBI 」ATI ATI GAN DI GREBEK*`
+	return`*🔞┋Espere en proceso*\n\nsi no llega es que hubo un error`
 }
 
 exports.lvlon = () => {
@@ -27,11 +27,15 @@ exports.lvlnoon = () => {
 }
 
 exports.noregis = () => {
-	return`*「 DAFTAR DULU 」*\n\n*Cara daftar ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar  ${pushname}|18*`
+	return`「 *❎SIN VERIFICACIÓN* 」
+┏╾─────────────
+│Verifiquese escribiendo
+│el comando *${prefix}verify*
+└──────────────`
 }
 
 exports.rediregis = () => {
-	return`*「 SUDAH TERDAFTAR 」*\n\n*Kamu sudah terdaftar di database ${namabot}*`
+	return`*❎┋usted ya esta verificado -_-*`
 }
 
 exports.stikga = () => {
@@ -136,7 +140,7 @@ exports.levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel,
 `}
  
 exports.limitend = (pushname) => {
-	return`*Maaf ${pushname} limit hari ini habis*\n*Hubungi kami* : wa.me/6285706666337\n\n*Note : Kami akan berikan random dari 1-10*`
+	return`*Maaf ${pushname} limit hari ini habis*\n*Hubungi kami* : wa.me/51940617554\n\n*Note : Kami akan berikan random dari 1-10*`
 }
 
 exports.limitcount = (limitCounts) => {
