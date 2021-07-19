@@ -536,7 +536,7 @@ mentionedJid: [sender]}
 
             /************** SCURITY GATI-BOT************/
             const isEventon = isGroup ? event.includes(from) : false
-            const isRegistered = checkRegisteredUser(sender)
+            const isVerify = checkRegisteredUser(sender)
             const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
             const isLevelingOn = isGroup ? _nivelacion.includes(from) : false
 			const isGroupAdmins = groupAdmins.includes(sender) || false
@@ -585,10 +585,6 @@ mentionedJid: [sender]}
             const slot7 = ['🍋','🍐','🍓','🍇','🍒']
             const slot8 = ['🍋','🍐','🍓','🍇','🍒']   
             const slot9 = ['🍋','🍐','🍓','🍇','🍒']
-            const fernazer1 = ['1','2','3','4','5','6','7','8','9']
-            const fernazer2 = ['1','2','3','4','5','6','7','8','9']
-            const fernazer3 = fernazer1[Math.floor(Math.random() * (fernazer1.length))]
-            const fernazer4 = fernazer2[Math.floor(Math.random() * (fernazer2.length))] 
             const buruh11 = buruh1[Math.floor(Math.random() * (buruh1.length))]
 		    const buruh22 = buruh2[Math.floor(Math.random() * (buruh2.length))]
 		    const buruh33 = buruh3[Math.floor(Math.random() * (buruh3.length))]
@@ -907,7 +903,7 @@ mentionedJid: [sender]}
 	}
 			
 	        //función nivelación
-            if (isGroup && isRegistered && isLevelingOn) {
+            if (isGroup && isVerify && isLevelingOn) {
             const currentLevel = getLevelingLevel(sender)
             const checkId = getLevelingId(sender)
             try {
@@ -979,7 +975,7 @@ mentionedJid: [sender]}
         }
       
             //función balance
-            if (isRegistered ) {
+            if (isVerify ) {
             const checkATM = checkATMuser(sender)
             try {
                 if (checkATM === undefined) addATM(sender)
@@ -1033,7 +1029,7 @@ case 'delete':
 client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.stanzaId, remoteJid: from, fromMe: true })
 		
 		case 'transfer':
-                 if (!isRegistered) return reply( ind.noregis())
+                 if (!isVerify) return reply( ind.noregis())
 				if (!q.includes('|')) return  reply(ind.wrongf())
                 		const tujuan = q.substring(0, q.indexOf('|') - 1)
                 		const jumblah = q.substring(q.lastIndexOf('|') + 1)
@@ -1052,7 +1048,7 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
 
               case 'soundplaydate':
 				
-                 if (!isRegistered) return reply( ind.noregis())
+                 if (!isVerify) return reply( ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				
 				let BOTOPERATORmy = fs.readFileSync('./mp3/Play-Date-Melanie-Martinez-Cover-by-邢凯悦XKY.mp3')
@@ -1075,7 +1071,7 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
 		    break
 		
 		    case 'verdad':
-		if (!isRegistered) return reply(ind.noregis())
+		if (!isVerify) return reply(ind.noregis())
                 const trut =['Pernah suka sama siapa aja? berapa lama?','Kalau boleh atau kalau mau, di gc/luar gc siapa yang akan kamu jadikan sahabat?(boleh beda/sma jenis)','apa ketakutan terbesar kamu?','pernah suka sama orang dan merasa orang itu suka sama kamu juga?','Siapa nama mantan pacar teman mu yang pernah kamu sukai diam diam?','pernah gak nyuri uang nyokap atau bokap? Alesanya?','hal yang bikin seneng pas lu lagi sedih apa','pernah cinta bertepuk sebelah tangan? kalo pernah sama siapa? rasanya gimana brou?','pernah jadi selingkuhan orang?','hal yang paling ditakutin','siapa orang yang paling berpengaruh kepada kehidupanmu','hal membanggakan apa yang kamu dapatkan di tahun ini','siapa orang yang bisa membuatmu sange','siapa orang yang pernah buatmu sange','(bgi yg muslim) pernah ga solat seharian?','Siapa yang paling mendekati tipe pasangan idealmu di sini','suka mabar(main bareng)sama siapa?','pernah nolak orang? alasannya kenapa?','Sebutkan kejadian yang bikin kamu sakit hati yang masih di inget','pencapaian yang udah didapet apa aja ditahun ini?','kebiasaan terburuk lo pas di sekolah apa?']
 		const ttrth = trut[Math.floor(Math.random() * trut.length)]
 		truteh = await getBuffer(`https://i.ibb.co/tzPwWDH/20210402-203555.jpg`)
@@ -1083,14 +1079,14 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
 		break
 		
 		case 'reto':
-		if (!isRegistered) return reply(ind.noregis())
+		if (!isVerify) return reply(ind.noregis())
 		const dare =['Kirim pesan ke mantan kamu dan bilang "aku masih suka sama kamu','telfon crush/pacar sekarang dan ss ke pemain','pap ke salah satu anggota grup','Bilang "KAMU CANTIK BANGET NGGAK BOHONG" ke cowo','ss recent call whatsapp','drop emot "🦄??" setiap ngetik di gc/pc selama 1 hari','kirim voice note bilang can i call u baby?','drop kutipan lagu/quote, terus tag member yang cocok buat kutipan itu','pake foto sule sampe 3 hari','ketik pake bahasa daerah 24 jam','ganti nama menjadi "gue anak lucinta luna" selama 5 jam','chat ke kontak wa urutan sesuai %batre kamu, terus bilang ke dia "i lucky to hv you','prank chat mantan dan bilang " i love u, pgn balikan','record voice baca surah al-kautsar','bilang "i hv crush on you, mau jadi pacarku gak?" ke lawan jenis yang terakhir bgt kamu chat (serah di wa/tele), tunggu dia bales, kalo udah ss drop ke sini','sebutkan tipe pacar mu!','snap/post foto pacar/crush','teriak gajelas lalu kirim pake vn kesini','pap mukamu lalu kirim ke salah satu temanmu','kirim fotomu dengan caption, aku anak pungut','teriak pake kata kasar sambil vn trus kirim kesini','teriak " anjimm gabutt anjimmm " di depan rumah mu','ganti nama jadi " BOWO " selama 24 jam','Pura pura kerasukan, contoh : kerasukan maung, kerasukan belalang, kerasukan kulkas, dll']
 		const der = dare[Math.floor(Math.random() * dare.length)]
 		tod = await getBuffer(`https://i.ibb.co/SVbfCZY/20210402-203727.jpg`)
 		client.sendMessage(from, tod, image, { quoted: mek, caption: '*RETO*\n\n'+ der })
 		
 		case 'mutual':
-                 if (!isRegistered) return reply( ind.noregis())
+                 if (!isVerify) return reply( ind.noregis())
 				if (isGroup) return  reply( 'Command ini tidak bisa digunakan di dalam grup!')
 				anug = getRegisteredRandomId(_verify).replace('@s.whatsapp.net','')
 				await reply('Find for a partner...')
@@ -1111,7 +1107,7 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
 				
          case 'premiumlist':
 				client.updatePresence(from, Presence.composing)
-                 if (!isRegistered) return reply( ind.noregis())
+                 if (!isVerify) return reply( ind.noregis())
 				teks = 'This is list of premium number :\n'
 				for (let premm of prem) {
 					teks += `~> @${premm.split('@')[0]}\n`
@@ -1167,7 +1163,7 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
                 case 'banlist':
 				client.updatePresence(from, Presence.composing) 
 				
-                 if (!isRegistered) return reply( ind.noregis())    
+                 if (!isVerify) return reply( ind.noregis())    
 				teks = 'This is list of banned number :\n'
 				for (let benn of ban) {
 					teks += `~> @${benn.split('@')[0]}\n`
@@ -1177,7 +1173,7 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
 				break
 				
 		case 'kalkulator':
-                 if (!isRegistered) return reply( ind.noregis())
+                 if (!isVerify) return reply( ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 				if (args.length < 1) return reply(`[❗] Kirim perintah *${prefix}kalkulator [ Angka ]*\nContoh : ${prefix}kalkulator 12*12\n*NOTE* :\n• Untuk Perkalian Menggunakan *\n• Untuk Pertambahan Menggunakan +\n• Untuk Pengurangan Menggunakan -\n• Untuk Pembagian Menggunakan /`)
@@ -1194,7 +1190,7 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
 //====================[ LIMITE ]====================\\
 
 		case 'dompet':
-                 if (!isRegistered) return reply( ind.noregis())
+                 if (!isVerify) return reply( ind.noregis())
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 				const kantong = checkATMuser(sender)
 				reply(ind.uangkau(pushname, sender, kantong))
@@ -1222,7 +1218,7 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
 				break
 				
 		case 'buylimit':
-                 if (!isRegistered) return reply( ind.noregis())
+                 if (!isVerify) return reply( ind.noregis())
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 				payout = body.slice(10)
 				const koinPerlimit = 2000
@@ -1236,8 +1232,7 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
 				break
 				
 		case 'buypremiumlimit':
-                 if (!isRegistered) return reply( ind.noregis())
-				
+                 if (!isVerify) return reply( ind.noregis())
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 				payout = body.slice(17)
 				const koinpremPerlimit = 500
@@ -1251,7 +1246,7 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
 				break
 				
 		case 'giftlimit': 
-                 if (!isRegistered) return reply( ind.noregis())
+                 if (!isVerify) return reply( ind.noregis())
 				if (!isOwner) return reply('*Only Adminban & Owner Kami!*')
 				const nomerr = args[0].replace('@','')
                 		const jmla = args[1]
@@ -1281,7 +1276,7 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
                			break
                
 		case 'limite':
-                 if (!isRegistered) return reply( ind.noregis())
+                 if (!isVerify) return reply( ind.noregis())
 				checkLimit(sender)
 				break
 				
@@ -1297,7 +1292,7 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
 //====================[ VERIFY/REGISTRO ]====================\\
 
 		case 'verify':
-                if (isRegistered) return  reply(ind.rediregis())
+                if (isVerify) return  reply(ind.rediregis())
                 const serialUser = createSerial(20)
     	 	   client.updatePresence(from, Presence.composing)
     	    	try {
@@ -1322,7 +1317,7 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
 				break
 				
 		case 'mining':
-                 if (!isRegistered) return reply( ind.noregis())
+                 if (!isVerify) return reply( ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pushname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 					if (!isEventon) return reply(`Maaf ${pushname} event mining tidak di aktifkan oleh owner`)
@@ -1340,7 +1335,7 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
 					
 		case 'speed5':
 		case 'ping3':
-                 if (!isRegistered) return reply( ind.noregis())
+                 if (!isVerify) return reply( ind.noregis())
 					await client.sendMessage(from, `Pong!!!!\nSpeed: ${processTime(time, moment())} _Second_`)
 					break
 
@@ -1349,7 +1344,7 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
 		case 'help': 
 		case 'menu':
             costum(`*L o a d i n g . . .*`, text, fimg)
-            if (!isRegistered) return reply( ind.noregis())
+            if (!isVerify) return reply( ind.noregis())
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
                     wew = fs.readFileSync(`./almacenamiento/imagenes/gati_3.jpg`)
                       lzain = `
@@ -1630,17 +1625,17 @@ break
 //====================[ MENU GRUPO ]====================\\
 
 		case 'donar':
-                 if (!isRegistered) return reply( ind.noregis())
+                 if (!isVerify) return reply( ind.noregis())
 					client.sendMessage(from, donacion(), text)
 					break
 					
 	  case 'github':
-                 if (!isRegistered) return reply( ind.noregis())
+                 if (!isVerify) return reply( ind.noregis())
 					client.sendMessage(from, github(), text)
 					break
 					
 		case 'nivel':
-                 if (!isRegistered) return reply( ind.noregis())
+                 if (!isVerify) return reply( ind.noregis())
 					if (!isLevelingOn) return reply(ind.lvlnoon())
 					if (!isGroup) return reply(ind.groupo())
 					const userLevel = getLevelingLevel(sender)
@@ -1762,7 +1757,7 @@ break
 					break
 					
 case 'ffstalk':
-if (!isRegistered) return reply(ind.noregis())
+if (!isVerify) return reply(ind.noregis())
 if (args.length == 0) return reply(`Idnya mana kak?`)
                     ff_id = args[0]
                     get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/freefire/${ff_id}?apikey=${lolkey}`)
@@ -1770,7 +1765,7 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
                     break
                     
                 case 'hidetag':
-                 if (!isRegistered) return reply( ind.noregis())
+                 if (!isVerify) return reply( ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 					if (!isGroup) return reply(ind.groupo())
@@ -1792,7 +1787,7 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
 					break
 
                 case 'afk':
-                 if (!isRegistered) return reply( ind.noregis())
+                 if (!isVerify) return reply( ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
                                 tels = body.slice(4)
@@ -1819,7 +1814,7 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
 					break
    
 		case 'ocr': 
-                 if (!isRegistered) return reply( ind.noregis())
+                 if (!isVerify) return reply( ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
@@ -1910,7 +1905,7 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
 					
 		case 'wa.me':
 		case 'wame':
-                 if (!isRegistered) return reply( ind.noregis())
+                 if (!isVerify) return reply( ind.noregis())
   					if (isLimit(sender)) return reply(ind.limitend(pusname))
   					client.updatePresence(from, Presence.composing) 
   					options = {
@@ -1948,7 +1943,7 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
 					break
 					
                     case 'toimg':
-                    if (!isRegistered) return reply(ind.noregis())
+                    if (!isVerify) return reply(ind.noregis())
 			     	if (!isQuotedSticker) return reply('Reply/tag sticker !')
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await client.downloadAndSaveMediaMessage(encmedia)
@@ -1965,7 +1960,7 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
             case 'stickergif':
 			case 'stikergif':
 			case 'sgif':
-			if (!isRegistered) return reply(ind.noregis())
+			if (!isVerify) return reply(ind.noregis())
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await client.downloadAndSaveMediaMessage(encmedia)
@@ -2054,7 +2049,7 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
 					break
 					
 		case 'leave':
-                 if (!isRegistered) return reply( ind.noregis())
+                 if (!isVerify) return reply( ind.noregis())
 					if (!isGroup) return reply(ind.groupo())
 					if (!isOwner) return reply(ind.ownerb())
 					setTimeout( () => {
@@ -2316,7 +2311,7 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
 				case 'stiker': 
 				case 'sticker':
 				case 's':
-				    if (!isRegistered) return reply(ind.noregis())
+				    if (!isVerify) return reply(ind.noregis())
 		if (isBanned) return reply(ind.baned())
 				    if (isLimit(sender)) return reply(ind.limitend(pusname))
                     await limitAdd(sender)
@@ -2376,7 +2371,7 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
 					break
 					
                 case 'tts':
-                if (!isRegistered) return reply(ind.noregis())
+                if (!isVerify) return reply(ind.noregis())
 					if (args.length < 1) return jere.sendMessage(from, 'Kode bahasanya mana kak?', text, {quoted: mek})
 					const gtts = require('./lib/gtts')(args[0])
 					if (args.length < 2) return jere.sendMessage(from, 'Textnya mana kak?', text, {quoted: mek})
@@ -2428,7 +2423,7 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
 
 case 'waifu':
 if (isBanned) return reply('Maaf kamu sudah terbenned!')
-if (!isRegistered) return reply( ind.noregis()) 
+if (!isVerify) return reply( ind.noregis()) 
 reply(ind.wait())
 waifu = await getBuffer(`https://api.lolhuman.xyz/api/random/waifu?apikey=${lolkey}`)
 client.sendMessage(from, waifu, image, { quoted: mek})
@@ -2436,7 +2431,7 @@ break
 
 case 'husbu':
 if (isBanned) return reply('Maaf kamu sudah terbenned!')
-if (!isRegistered) return reply( ind.noregis()) 
+if (!isVerify) return reply( ind.noregis()) 
 reply(ind.wait())
 husbu = await getBuffer(`https://api.lolhuman.xyz/api/random/husbu?apikey=${lolkey}`)
 client.sendMessage(from, husbu, image, { quoted: mek})
@@ -2444,7 +2439,7 @@ break
 
 case 'loli':
 if (isBanned) return reply('Maaf kamu sudah terbenned!')
-if (!isRegistered) return reply( ind.noregis()) 
+if (!isVerify) return reply( ind.noregis()) 
 reply(ind.pedo())
 loli = await getBuffer(`https://api.lolhuman.xyz/api/random/loli?apikey=${lolkey}`)
 client.sendMessage(from, loli, image, { quoted: mek})
@@ -2452,7 +2447,7 @@ break
 
 case 'elf':
 if (isBanned) return reply('Maaf kamu sudah terbenned!')
-if (!isRegistered) return reply( ind.noregis()) 
+if (!isVerify) return reply( ind.noregis()) 
 reply(ind.wait())
 elf = await getBuffer(`https://api.lolhuman.xyz/api/random/elf?apikey=${lolkey}`)
 client.sendMessage(from, elf, image, { quoted: mek})
@@ -2493,7 +2488,7 @@ break
                 case 'summersand':
                 case 'horrorblood':
                 case 'thunder':
-		if (!isRegistered) return reply(ind.noregis())
+		if (!isVerify) return reply(ind.noregis())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} Its Ara`)
                     ini_txt = args.join(" ")
                     ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/textprome/${command}?apikey=${lolkey}&text=${ini_txt}`)
@@ -2509,7 +2504,7 @@ break
                 case 'wolflogo':
                 case 'steel3d':
                 case 'wallgravity':
-		if (!isRegistered) return reply(ind.noregis())
+		if (!isVerify) return reply(ind.noregis())
                cf = `${body.slice(8)}`
                     txt1 = cf.split("/")[0];
                     txt2 = cf.split("/")[1];
@@ -2545,7 +2540,7 @@ break
                 case 'flamming':
                 case 'harrypotter':
                 case 'carvedwood':
-		if (!isRegistered) return reply(ind.noregis())
+		if (!isVerify) return reply(ind.noregis())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} Its Ara`)
                     ini_txt = args.join(" ")
                     ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/photooxy1/${command}?apikey=${lolkey}&text=${ini_txt}`)
@@ -2556,7 +2551,7 @@ break
                 case 'arcade8bit':
                 case 'battlefield4':
                 case 'pubg':
-		if (!isRegistered) return reply(ind.noregis())
+		if (!isVerify) return reply(ind.noregis())
 		            cf = `${body.slice(8)}`
                     txt1 = cf.split("/")[0];
                     txt2 = cf.split("/")[1];
@@ -2598,7 +2593,7 @@ break
                 case 'goldplaybutton':
                 case 'silverplaybutton':
                 case 'freefire':
-		if (!isRegistered) return reply(ind.noregis())
+		if (!isVerify) return reply(ind.noregis())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} Its Ara`)
                     ini_txt = args.join(" ")
                     ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/ephoto1/${command}?apikey=${lolkey}&text=${ini_txt}`)
@@ -2606,7 +2601,7 @@ break
                     break
                     
                    case 'ytkomen':
-		if (!isRegistered) return reply(ind.noregis())
+		if (!isVerify) return reply(ind.noregis())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} query\nContoh: ${prefix + command} Fernazer api.lolhuman.xyz`)
 		username = args[0]
 		comment = args[2]
@@ -2615,7 +2610,7 @@ break
                     break
                     
                     case 'phkomen':
-		if (!isRegistered) return reply(ind.noregis())
+		if (!isVerify) return reply(ind.noregis())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} query\nContoh: ${prefix + command} Fernazer api.lolhuman.xyz`)
 		username = args[0]
 		comment = args[2]
@@ -2624,14 +2619,14 @@ break
                     break
                     
                     case 'amongus':
-		if (!isRegistered) return reply(ind.noregis())
+		if (!isVerify) return reply(ind.noregis())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} query\nContoh: ${prefix + command} Fernazer`)
                     buffer = await getBuffer(`http://lolhuman.herokuapp.com/api/amongus?apikey=${lolhuman}&text=${body.slice(9)}`)
                     client.sendMessage(from, buffer, sticker, { quoted: mek})
                     break
                     
                     case 'artinama':
-		if (!isRegistered) return reply(ind.noregis())
+		if (!isVerify) return reply(ind.noregis())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} Fernazer`)
                     ini_nama = args.join(" ")
                     get_result = await fetchJson(`http://api.lolhuman.xyz/api/artinama?apikey=${lolkey}&nama=${ini_nama}`)
@@ -2639,7 +2634,7 @@ break
                     break
                     
                 case 'jodoh':
-		if (!isRegistered) return reply(ind.noregis())
+		if (!isVerify) return reply(ind.noregis())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} Tahu & Bacem`)
                     ini_nama = args.join(" ").split("&")
                     nama1 = ini_nama[0].trim()
@@ -2653,7 +2648,7 @@ break
                     break
                     
                 case 'weton':
-		if (!isRegistered) return reply(ind.noregis())
+		if (!isVerify) return reply(ind.noregis())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} 12 12 2020`)
                     tanggal = args[0]
                     bulan = args[1]
@@ -2668,7 +2663,7 @@ break
                     break
                     
                 case 'jadian':
-		if (!isRegistered) return reply(ind.noregis())
+		if (!isVerify) return reply(ind.noregis())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} 12 12 2020`)
                     tanggal = args[0]
                     bulan = args[1]
@@ -2681,7 +2676,7 @@ break
                     break
                     
                 case 'tebakumur':
-		if (!isRegistered) return reply(ind.noregis())
+		if (!isVerify) return reply(ind.noregis())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} Fernazer`)
                     ini_name = args.join(" ")
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} Fernazer`)
@@ -2693,7 +2688,7 @@ break
                     break
                     
                case 'alay': 
-				if (!isRegistered) return reply(ind.noregis())
+				if (!isVerify) return reply(ind.noregis())
 				if (args.length < 1) return reply(`*Ejemplo:* Fernazer`)
 					gatauda = body.slice(6)
 					anu = await fetchJson(`http://api.lolhuman.xyz/api/alay?apikey=${lolkey}&text=${gatauda}`)
@@ -2702,7 +2697,7 @@ break
 					
 					case 'purba':
 					case 'bpurba': 
-				if (!isRegistered) return reply(ind.noregis())
+				if (!isVerify) return reply(ind.noregis())
 				if (args.length < 1) return reply(`*Ejemplo:* Fernazer`)
 					gatauda = body.slice(7)
 					anu = await fetchJson(`http://api.lolhuman.xyz/api/bahasapurba?apikey=${lolkey}&text=${gatauda}`)
@@ -2712,7 +2707,7 @@ break
 					case 'BK':
 					case 'bk':
 					case 'besarkecil': 
-				if (!isRegistered) return reply(ind.noregis())
+				if (!isVerify) return reply(ind.noregis())
 				if (args.length < 1) return reply(`*Ejemplo:* Fernazer`)
 					gatauda = body.slice(12)
 					anu = await fetchJson(`http://api.lolhuman.xyz/api/upperlower?apikey=${lolkey}&text=${gatauda}`)
@@ -2720,7 +2715,7 @@ break
 					break
 					
 					case 'hilih': 
-				if (!isRegistered) return reply(ind.noregis())
+				if (!isVerify) return reply(ind.noregis())
 				if (args.length < 1) return reply(`*Ejemplo:* Fernazer`)
 					gatauda = body.slice(7)
 					anu = await fetchJson(`http://api.lolhuman.xyz/api/hilih?apikey=${lolkey}&text=${gatauda}`)
@@ -2728,7 +2723,7 @@ break
 					break
 					
                case 'namaninja': 
-				if (!isRegistered) return reply(ind.noregis())
+				if (!isVerify) return reply(ind.noregis())
 				if (args.length < 1) return reply(`*Ejemplo:* Fernazer`)
 					gatauda = body.slice(11)
 					anu = await fetchJson(`http://lolhuman.herokuapp.com/api/ninja?apikey=${lolkey}&nama=${gatauda}`)
@@ -2816,7 +2811,7 @@ break
                     break
                     
                 case 'githubstalk':
-                    if (!isRegistered) return reply(ind.noregis())
+                    if (!isVerify) return reply(ind.noregis())
                     if (args.length == 0) return reply(`Namanya apa kak?`)
                     username = args[0]
                     ini_result = await fetchJson(`https://api.lolhuman.xyz/api/github/${username}?apikey=${lolkey}`)
@@ -2851,7 +2846,7 @@ break
 //====================[ MENU STALKING ]====================\\
 
                    case 'stalkig':
-                   if (!isRegistered) return reply(ind.noregis())
+                   if (!isVerify) return reply(ind.noregis())
 		if (isBanned) return reply(ind.baned())
                    if (isLimit(sender)) return reply(ind.limitend(pusname))
                      teks = body.slice(9)
@@ -2864,7 +2859,7 @@ break
 			        break
 			
 			       case 'githubstalk':
-					if (!isRegistered) return reply(ind.noregis())
+					if (!isVerify) return reply(ind.noregis())
 					get_result = await fetchJson(`http://lolhuman.herokuapp.com/api/github/${body.slice(13)}?apikey=${lolkey}`, {method: 'get'})
 					get_result = get_result.result
 					txt = `Full : ${get_result.name}\n`
@@ -2882,7 +2877,7 @@ break
 					break
 					
 		case 'tkstalk':
-			if (!isRegistered) return reply(ind.noregis())
+			if (!isVerify) return reply(ind.noregis())
 			username = args[0]
 					get_result = await fetchJson(`http://lolhuman.herokuapp.com/api/stalktiktok/${username}?apikey=${lolkey}`, {method: 'get'})
 					get_result = get_result.result
@@ -2933,7 +2928,7 @@ break
                     break
                     
                     case 'ytmp33':
-                    if (!isRegistered) return reply(ind.noregis())
+                    if (!isVerify) return reply(ind.noregis())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} https://www.youtube.com/watch?v=qZIQAk-BUEc`)
                     ini_link = args[0]
                     get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/ytaudio2?apikey=${lolkey}&url=${ini_link}`)
@@ -2946,7 +2941,7 @@ break
                     break
                     
                     case 'ytsearch':
-                    if (!isRegistered) return reply(ind.noregis())
+                    if (!isVerify) return reply(ind.noregis())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} Dj Tie Me Down`)
                     query = args.join(" ")
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/ytsearch?apikey=${lolkey}&query=${query}`)
@@ -2963,7 +2958,7 @@ break
                     break
                     
                     case 'ytmp3':
-                    if (!isRegistered) return reply(ind.noregis())
+                    if (!isVerify) return reply(ind.noregis())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} https://www.youtube.com/watch?v=qZIQAk-BUEc`)
                     ini_link = args[0]
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/ytaudio?apikey=${lolkey}&url=${ini_link}`)
@@ -2982,7 +2977,7 @@ break
                     break
                     
                     case 'ytmp32':
-                    if (!isRegistered) return reply(ind.noregis())
+                    if (!isVerify) return reply(ind.noregis())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} https://www.youtube.com/watch?v=qZIQAk-BUEc`)
                     ini_link = args[0]
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/ytaudio2?apikey=${lolkey}&url=${ini_link}`)
@@ -2995,7 +2990,7 @@ break
                     break
                     
                     case 'ytmp4':
-                    if (!isRegistered) return reply(ind.noregis())
+                    if (!isVerify) return reply(ind.noregis())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} https://www.youtube.com/watch?v=qZIQAk-BUEc`)
                     ini_link = args[0]
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/ytvideo?apikey=${lolkey}&url=${ini_link}`)
@@ -3033,7 +3028,7 @@ break
 				    break
 				
                     case 'ytmp42':
-                    if (!isRegistered) return reply(ind.noregis())
+                    if (!isVerify) return reply(ind.noregis())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} https://www.youtube.com/watch?v=qZIQAk-BUEc`)
                     ini_link = args[0]
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/ytvideo2?apikey=${lolkey}&url=${ini_link}`)
@@ -3048,7 +3043,7 @@ break
 //====================[ MENU BUSCADOR ]====================\\
                     
                     case 'gimage':
-                    if (!isRegistered) return reply( ind.noregis())
+                    if (!isVerify) return reply( ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 				    if (isBanned) return reply(ind.baned())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} loli kawaii`)
@@ -3058,7 +3053,7 @@ break
                     break
                     
                 case 'gimage2':
-                    if (!isRegistered) return reply( ind.noregis())
+                    if (!isVerify) return reply( ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 				    if (isBanned) return reply(ind.baned())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} loli kawaii`)
@@ -3072,7 +3067,7 @@ break
                     break
                     
                 case 'konachan':
-                    if (!isRegistered) return reply( ind.noregis())
+                    if (!isVerify) return reply( ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 				    if (isBanned) return reply(ind.baned())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} azur_lane`)
@@ -3082,7 +3077,7 @@ break
                     break
                     
                 case 'wallpapersearch':
-                    if (!isRegistered) return reply( ind.noregis())
+                    if (!isVerify) return reply( ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 				    if (isBanned) return reply(ind.baned())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} loli kawaii`)
@@ -3092,7 +3087,7 @@ break
                     break
                     
                 case 'wallpapersearch2':
-                    if (!isRegistered) return reply( ind.noregis())
+                    if (!isVerify) return reply( ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 				    if (isBanned) return reply(ind.baned())
                     if (args.length == 0) return reply(`*Ejemplo:* ${prefix + command} loli kawaii`)
