@@ -50,6 +50,7 @@ const tiktod = require('tiktok-scraper')
 const brainly = require('brainly-scraper')
 const ffmpeg = require('fluent-ffmpeg')
 const cd = 4.32e+7
+const CFonts  = require('cfonts')
 const { removeBackgroundFromImageFile } = require('remove.bg')
 const { ind } = require('./mensaje')
 
@@ -69,8 +70,8 @@ memberlimit = 10
 namabot = 'gati-bot'
 cr = '*「 gati-bot 」*'
 ftoko = "gati-bot"
-lolkey = '40cd5b6566bef10af1425f0f'
-apixteam = ''
+lolkey = 'ESCRIBE TU KEY AQUÍ' //> Si no sabes como escríbeme wa.me/51940617554
+Brizakey = 'brizaloka' 
 apivhtear = 'YT_GATI-BOT'
 
 
@@ -269,14 +270,21 @@ function kyun(seconds){
   //return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds)
   return `${pad(hours)} Jam ${pad(minutes)} Menit ${pad(seconds)} Detik`
 }
-/********** FUNCTION ***************/
+/********** FUNCIÓN ***************/
 
-console.log(color('===========================================================','red'))
-console.log(color('============[ GRACIAS POR INSTALAR A GATI-BOT ]============','yellow'))
-console.log(color('==============[ UN BOT ESCHO CON MUCHO ❤ ]=================','yellow'))
-console.log(color('===========================================================','red'))
+CFonts.say('=======================「 INFO 」=========================', {font: 'console', align: 'center', gradient: ['white', 'cyan']})
+console.log(color('','yellow'))
+console.log(color(' > Por favor de mantener este','yellow'))
+console.log(color(' > codigo tal y como esta.','yellow'))
+console.log(color('','yellow'))
+console.log(color(' > Si lo modificas','yellow'))
+console.log(color(' > manten los créditos.','yellow'))
+console.log(color('','yellow'))
+console.log(color('> BY G4TITO','yellow'))
+console.log(color('','yellow'))
+CFonts.say('======================「 GATI-BOT 」======================', {font: 'console', align: 'center', gradient: ['white', 'cyan']})
 const client = new WAConnection()
-//WWEB 
+//WHATSAPP WEB
 client.version = [2, 2119, 6]
    client.on('qr', qr => {
    qrcode.generate(qr, { small: true }) 
@@ -292,7 +300,6 @@ client.on('credentials-updated', () => {
 })
 fs.existsSync('./gati-bot.json') && client.loadAuthInfo('./gati-bot.json')
 client.connect();
-
 
 client.on('group-participants-update', async (anu) => {
 		if (!welkom.includes(anu.jid)) return
@@ -1095,6 +1102,44 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
 				await limitAdd(sender)
 				break
 		
+		case 'ppt':
+                    addFilter(from)
+                    if (args.length < 1) return reply(ind.ppterror())
+                    ppt = ["piedra", "papel", "tijera"]
+                    ppy = ppt[Math.floor(Math.random() * ppt.length)]
+                    ppg = Math.floor(Math.random() * 13) + 349
+                    pptb = ppy
+                    pph = `*Usted ganó ${ppg} de Exp*`
+                    if ((pptb == "piedra" && args == "papel") ||
+                        (pptb == "papel" && args == "tijera") ||
+                        (pptb == "tijera" && args == "piedra")) {
+                        var vit = "vitoria"
+                    } else if ((pptb == "pedra" && args == "tijera") ||
+                        (pptb == "papel" && args == "piedra") ||
+                        (pptb == "tijera" && args == "papel")) {
+                        var vit = "derrota"
+                    } else if ((pptb == "piedra" && args == "piedra") ||
+                        (pptb == "papel" && args == "papel") ||
+                        (pptb == "tijera" && args == "tijera")) {
+                        var vit = "empate"
+                    } else if (vit = "undefined") {
+                        return reply(ind.ppterror())
+                    }
+                    if (vit == "vitoria") {
+                        var tes = "🥳 victoria del jugador"
+                    }
+                    if (vit == "derrota") {
+                        var tes = "🐱 victoria de gati-bot"
+                    }
+                    if (vit == "empate") {
+                        var tes = "El juego termino en empate"
+                    }
+                    reply(`*Gati-bot:* ${pptb}\n*Jugador:* ${args}\n\n${tes}`)
+                    if (tes == "🥳 victoria del jugador") {
+                        reply(pph)
+                    }
+                    break
+		
 //====================[ MENU PREMIUM ]====================\\
 		
 		case 'unpremium':
@@ -1189,11 +1234,11 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
 
 //====================[ LIMITE ]====================\\
 
-		case 'dompet':
+		case 'cartera':
                  if (!isVerify) return reply( ind.noregis())
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 				const kantong = checkATMuser(sender)
-				reply(ind.uangkau(pushname, sender, kantong))
+				reply(ind.cartera(pushname, sender, kantong))
 				break
 				
 	    case 'leaderboard':
@@ -1384,16 +1429,16 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
 ┌「 *EXP LIMITE* 」
 └────────╮
 ┏╾───────╯
-│▪︎${prefix}dompet
+│▪︎${prefix}cartera
 │▪︎${prefix}buypremiumlimit
 │▪︎${prefix}buylimit
 │▪︎${prefix}lb
 │▪︎${prefix}leaderboard
-│▪︎$prefix}limite
+│▪︎${prefix}limite
 │▪︎${prefix}transfer
 │▪︎${prefix}giftlimit
 │▪︎${prefix}kalkulator
-│▪︎${prefix}level
+│▪︎${prefix}nivel
 │▪︎${prefix}profile
 └──┘
 
@@ -1602,6 +1647,7 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
 ┏╾───────╯
 │▪︎${prefix}verdad
 │▪︎${prefix}reto
+│▪︎${prefix}ppt
 │▪︎${prefix}slot
 │▪︎${prefix}mutual
 └──┘
@@ -2193,6 +2239,37 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
 					}
 					mentions(teks, groupAdmins, true)
 					break
+					
+		case 'nicks':
+                    teksl = body.slice(10)
+                    send = await fetchJson(`http://brizas-api.herokuapp.com/gerador/fancytext?apikey=${Brizakey}&text=${teksl}`)
+                    teks = `*✅ NICKS PERSONALIZADOS ✅*
+
+LISTA RANDOM:
+🔰 ${send.random_1} 
+🔰 ${send.random_2} 
+🔰 ${send.random_3} 
+🔰 ${send.random_4} 
+🔰 ${send.random_5}
+ 
+ FUENTES PREDEFINIDAS:
+🔰 ${send.squares}
+🔰 ${send.inverted_squares}
+🔰 ${send.italic}
+🔰 ${send.bold}
+🔰 ${send.future_alien}
+🔰 ${send.asian_1}
+🔰 ${send.asian_2}
+🔰 ${send.squiggle}
+🔰 ${send.squiggle_2}
+🔰 ${send.squiggle_3}
+🔰 ${send.squiggle_4}
+🔰 ${send.neon}`
+                    client.sendMessage(from, teks, text, {
+                        quoted: mek
+                    })
+                    addFilter(from)
+                    break
 					
 //====================[ ACTIVADORES 1/0 ]====================\\
 
