@@ -43,6 +43,7 @@ const { github } = require('./menu/github')
 const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
 const fontPath = ('./lib/Zahraaa.ttf')
+const { isFiltered, addFilter } = require('./lib/antispam')
 const path = require('path')
 const { exec, spawn } = require("child_process")
 const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
@@ -1025,10 +1026,28 @@ mentionedJid: [sender]}
 			if (isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mGATI-BOT\x1b[1;37m]', time, color(command), 'de', color(sender.split('@')[0]), 'en', color(groupName), 'args :', color(args.length))
 			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mGATI-BOT\x1b[1;37m]', time, color('Message'), 'de', color(sender.split('@')[0]), 'en', color(groupName), 'args :', color(args.length))
 			
+			//anti spam by g4tito
 			switch(command) {	
 			
-			
-			
+			if (isCmd && isFiltered(from) && !isGroup) {
+        console.log(color('[SPAM]', 'red'), time, color(`${command}`), 'de', color(pushname))
+        const ff = {
+                  text:  `Mas despacio @${sender.split('@')[0]}...\n\nEspere 5 segundos antes de usar otro comando✅`,
+                    contextInfo: {
+                        mentionedJid: [sender]
+                    }
+                 }
+        return reply(ff)}
+        
+        if (isCmd && isFiltered(from) && isGroup) {
+        console.log(color('[SPAM]', 'red'), time, color(`${command}`), 'de', color(pushname))
+        const ff1 = {
+                  text:  `Mas despacio @${sender.split('@')[0]}...\n\nEspere 5 segundos antes de usar otro comando✅`,
+                    contextInfo: {
+                        mentionedJid: [sender]
+                    }
+                 }
+        return reply(ff1)}
   									
 case 'd':
 case 'del':
@@ -1103,7 +1122,6 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
 				break
 		
 		case 'ppt':
-                    addFilter(from)
                     if (args.length < 1) return reply(ind.ppterror())
                     ppt = ["piedra", "papel", "tijera"]
                     ppy = ppt[Math.floor(Math.random() * ppt.length)]
@@ -1321,6 +1339,7 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
                			break
                
 		case 'limite':
+		         addFilter(from)
                  if (!isVerify) return reply( ind.noregis())
 				checkLimit(sender)
 				break
@@ -2268,7 +2287,6 @@ LISTA RANDOM:
                     client.sendMessage(from, teks, text, {
                         quoted: mek
                     })
-                    addFilter(from)
                     break
 					
 //====================[ ACTIVADORES 1/0 ]====================\\
