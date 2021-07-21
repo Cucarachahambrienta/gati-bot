@@ -39,7 +39,7 @@
 
 ---------
 
-## 🔄 Atualizar automaticamente
+## 🔁 Atualizar automaticamente
 
 ```bash
 > cd gati-bot
@@ -48,7 +48,7 @@
 
 ---------
 
-## ⬇️ Instalación en termux
+## 📥 Instalación en termux
 
 ```bash
 > pkg update -y
@@ -88,7 +88,7 @@
 
 ---------
 
-## 🤝 Contacto
+## 🤧 Contacto
 
 - Si tiene algún problema el bot contactame u.u
 
