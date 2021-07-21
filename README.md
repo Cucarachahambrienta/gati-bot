@@ -27,7 +27,7 @@
 
 ---------
 
-## Herramientas
+## ⚙ Herramientas
 
 ```bash
 > Termux
