@@ -22,11 +22,26 @@ exports.lvlnul = () => {
 	return`*「 ❌ 」TU NIVEL AÚN ESTÁ VACÍO*`
 }
 
+//====================[ MENSAJES/ANTI-ENLACE ]====================\\
+
+exports.antienlaceadm = () => {
+	return`*❬🚫❭ ENLACE DETECTADO ❬🚫❭*\n\n⚠️Usted es un administrador/a del grupo por eso no le eliminare.\nEspero que aya pedido permiso para enviar ese enlace.`
+}
+exports.antienlaceon = () => {
+	return`*❬🚫❭ ENLACE DETECTADO ❬🚫❭*\n\n⚠️Usted sera eliminado del grupo en 3 segundos bye...`
+}
+exports.antienlaceerror = () => {
+	return`*⚠️Error:*\nSe produjo un error inesperado :/`
+}
+//exports.750 = () => {
+	//return`750`
+//}
+
 exports.lvlnoon = () => {
 	return`*LOS NIVELES EN ESTE GRUPO NO SE HAN ACTIVADO *`
 }
 
-exports.noregis = () => {
+exports.noverify = () => {
 	return`「 *❎SIN VERIFICACIÓN* 」
 ┏╾─────────────
 │Verifiquese escribiendo
@@ -35,7 +50,7 @@ exports.noregis = () => {
 }
 
 exports.rediregis = () => {
-	return`*❎┋usted ya esta verificado -_-*`
+	return`*❎┇usted ya esta verificado -_-*`
 }
 
 exports.stikga = () => {
@@ -50,25 +65,27 @@ exports.groupo = () => {
 	return`*「GROUP ONLY」*`
 }
 
-exports.ownerb = () => {
-	return`*「OWNER BOT ONLY」*`
+exports.creadorbot = () => {
+	return`*❎┇Solo el creador del bot puede utilizar este comando*`
 }
 
 exports.ownerg = () => {
-	return`*「OWNER GROUP ONLY」*`
+	return`*⚠️┇Solo el creador del grupo puede utilizar este comando*`
 }
 
 exports.admin = () => {
-	return`*「ADMIN GROUP ONLY」*`
+	return`*⭕┇Solo los administadores/as pueden utilizar este comando*`
 }
 
 exports.badmin = () => {
-	return`*「BOT HARUS JADI ADMIN」*`
+	return`*✖️┇Solo los administadores/as del bot pueden utilizar este comando*``
 }
 
 exports.nsfwoff = () => {
-	return`*🔞┃NSFW DESACTIVADO*\n\nsolo puede ser activado en grupos que permitan el contenido +18`
+	return`*🔞┇NSFW DESACTIVADO*\n\nsolo puede ser activado en grupos que permitan el contenido +18`
 }
+
+//====================[ MENSAJES/JUEGOS ]====================\\
 
 exports.ppterror = () => {
 	return `*✳️Debe escribir así ejemplo:*\n\n▪︎${prefix}ppt papel\n▪︎${prefix}ppt piedra\n▪︎${prefix}ppt tijera`
@@ -82,8 +99,8 @@ exports.wrongf = () => {
 	return`*Formato incorrecto/texto vacío*`
 }
 
-exports.clears = () => {
-	return`*Borrar todo el éxito*`
+exports.borrarmsg = () => {
+	return`*✅┇se elimino todos los mensajes con éxito*`
 }
 
 exports.registered = (pushname, sender, serialUser, time, _verify) => {
@@ -132,8 +149,8 @@ limites restantes: ${limitCounts}
 *Nota:* puede obtener mas limites comprandolos o subiendo de nivel.`
 }
 
-exports.satukos = () => {
-	return`*Agregar parámetro 1/habilitar o 0/deshabilitar*`
+exports.error01 = (prefix, command) => {
+	return`*✳️Escriba:*\n\n1 = activar\n0 = desactivar\n\n*🕯️Ejemplo:*\n\n${prefix + command} 1`
 }
 
 exports.cartera = (pushname, sender, uangkau) => {
