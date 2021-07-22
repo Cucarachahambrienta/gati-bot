@@ -78,7 +78,7 @@ exports.admin = () => {
 }
 
 exports.badmin = () => {
-	return`*✖️┇Solo los administadores/as del bot pueden utilizar este comando*``
+	return`*✖️┇Solo los administadores/as del bot pueden utilizar este comando*`
 }
 
 exports.nsfwoff = () => {
