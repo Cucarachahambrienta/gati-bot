@@ -88,6 +88,12 @@
 
 ---------
 
+## 💰 Donaciones
+
+* <a href="https://paypal.me/gatito55"><img alt="Paypal" src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" /></a>
+
+---------
+
 ## 🤧 Contacto
 
 - Si tiene algún problema el bot contactame u.u
