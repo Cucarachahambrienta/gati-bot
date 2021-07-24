@@ -65,6 +65,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'TEL;type=CELL;type=VOICE;waid=51940617554:+51940617554\n'
             + 'END:VCARD'
 prefix = '#'
+a = '```'
 blocked = []
 replitx = '*GATI-BOT*'
 ari = '*GATI-BOT VERIFICADO*'
@@ -73,10 +74,10 @@ memberlimit = 10
 namabot = 'gati-bot'
 cr = '*「 gati-bot 」*'
 ftoko = "gati-bot"
-lolkey = 'ESCRIBE TU KEY AQUÍ' //> Si no sabes como escríbeme wa.me/51940617554
+lolkey = '40cd5b6566bef10af1425f0f' //> Si no sabes como escríbeme wa.me/51940617554
 Brizakey = 'brizaloka' 
 apivhtear = 'YT_GATI-BOT'
-
+imgibb = 'https://i.ibb.co/cCN21Cv/gati-bot-7.png'
 
 /******** NUMERO DEL CREADOR *********/
 const ownerNumber = ["51940617554@s.whatsapp.net"]
@@ -283,7 +284,7 @@ console.log(color('','yellow'))
 console.log(color(' > Si lo modificas','yellow'))
 console.log(color(' > manten los créditos.','yellow'))
 console.log(color('','yellow'))
-console.log(color('> BY G4TITO','yellow'))
+console.log(color(' > BY G4TITO','yellow'))
 console.log(color('','yellow'))
 CFonts.say('======================「 GATI-BOT 」======================', {font: 'console', align: 'center', gradient: ['white', 'cyan']})
 const client = new WAConnection()
@@ -524,6 +525,10 @@ client.on('message-update', async (mek) => {
 			const groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
             const ftoko = { key: { fromMe: false, participant: `51940617554@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "productMessage": { "product": { "productImage":{ "mimetype": "image/jpeg", "jpegThumbnail": fs.readFileSync('./almacenamiento/imagenes/gati_3.jpg') }, "title": `Subrek ItsAra`, "productImageCount": 9999 }, "businessOwnerJid": `51940617554@s.whatsapp.net`}}}
            
+           const fakethumb = (teks, yes) => {
+            client.sendMessage(from, teks, image, {thumbnail:fs.readFileSync('./almacenamiento/imagenes/gati_2.jpg'),quoted:mek,caption:yes})
+        }
+           
            const fimg = {
 key:
 { fromMe: false,
@@ -550,7 +555,7 @@ mentionedJid: [sender]}
             const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
             const isLevelingOn = isGroup ? _nivelacion.includes(from) : false
 			const isGroupAdmins = groupAdmins.includes(sender) || false
-			const isWelkom = isGroup ? welkom.includes(from) : false
+			const isBienvenida = isGroup ? welkom.includes(from) : false
 			const isNsfw = isGroup ? nsfw.includes(from) : false
 			const isSimi = isGroup ? samih.includes(from) : false
 			const isAntienlace = isGroup ? antienlace.includes(from) : false
@@ -611,294 +616,294 @@ mentionedJid: [sender]}
 				                       
             
 		//nivel de rango
-        const levelRole = getLevelingLevel(sender)
-        var role = 'Newbie ㋡'
-        if (levelRole <= 2) {
-            role = 'Newbie ㋡'
-        } else if (levelRole <= 4) {
-            role = 'Beginner Grade 1 ⚊¹'
-        } else if (levelRole <= 6) {
-            role = 'Beginner Grade 2 ⚊²'
-        } else if (levelRole <= 8) {
-            role = 'Beginner Grade 3 ⚊³'
-        } else if (levelRole <= 10) {
-            role = 'Beginner Grade 4 ⚊⁴'
-        } else if (levelRole <= 12) {
-            role = 'Private Grade 1 ⚌¹'
-        } else if (levelRole <= 14) {
-            role = 'Private Grade 2 ⚌²'
-        } else if (levelRole <= 16) {
-            role = 'Private Grade 3 ⚌³'
-        } else if (levelRole <= 18) {
-            role = 'Private Grade 4 ⚌⁴'
-        } else if (levelRole <= 20) {
-            role = 'Private Grade 5 ⚌⁵'
-        } else if (levelRole <= 22) {
-            role = 'Corporal Grade 1 ☰¹'
-        } else if (levelRole <= 24) {
-            role = 'Corporal Grade 2 ☰²'
-        } else if (levelRole <= 26) {
-            role = 'Corporal Grade 3 ☰³'
-        } else if (levelRole <= 28) {
-            role = 'Corporal Grade 4 ☰⁴'
-        } else if (levelRole <= 30) {
-            role = 'Corporal Grade 5 ☰⁵'
-        } else if (levelRole <= 32) {
-            role = 'Sergeant Grade 1 ≣¹'
-        } else if (levelRole <= 34) {
-            role = 'Sergeant Grade 2 ≣²'
-        } else if (levelRole <= 36) {
-            role = 'Sergeant Grade 3 ≣³'
-        } else if (levelRole <= 38) {
-            role = 'Sergeant Grade 4 ≣⁴'
-        } else if (levelRole <= 40) {
-            role = 'Sergeant Grade 5 ≣⁵'
-        } else if (levelRole <= 42) {
-            role = 'Staff Grade 1 ﹀¹'
-        } else if (levelRole <= 44) {
-            role = 'Staff Grade 2 ﹀²'
-        } else if (levelRole <= 46) {
-            role = 'Staff Grade 3 ﹀³'
-        } else if (levelRole <= 48) {
-            role = 'Staff Grade 4 ﹀⁴'
-        } else if (levelRole <= 50) {
-            role = 'Staff Grade 5 ﹀⁵'
-        } else if (levelRole <= 52) {
-            role = 'Sergeant Grade 1 ︾¹'
-        } else if (levelRole <= 54) {
-            role = 'Sergeant Grade 2 ︾²'
-        } else if (levelRole <= 56) {
-            role = 'Sergeant Grade 3 ︾³'
-        } else if (levelRole <= 58) {
-            role = 'Sergeant Grade 4 ︾⁴'
-        } else if (levelRole <= 60) {
-            role = 'Sergeant Grade 5 ︾⁵'
-        } else if (levelRole <= 62) {
-            role = '2nd Lt. Grade 1 ♢¹ '
-        } else if (levelRole <= 64) {
-            role = '2nd Lt. Grade 2 ♢²'
-        } else if (levelRole <= 66) {
-            role = '2nd Lt. Grade 3 ♢³'
-        } else if (levelRole <= 68) {
-            role = '2nd Lt. Grade 4 ♢⁴'
-        } else if (levelRole <= 70) {
-            role = '2nd Lt. Grade 5 ♢⁵'
-        } else if (levelRole <= 72) {
-            role = '1st Lt. Grade 1 ♢♢¹'
-        } else if (levelRole <= 74) {
-            role = '1st Lt. Grade 2 ♢♢²'
-        } else if (levelRole <= 76) {
-            role = '1st Lt. Grade 3 ♢♢³'
-        } else if (levelRole <= 78) {
-            role = '1st Lt. Grade 4 ♢♢⁴'
-        } else if (levelRole <= 80) {
-            role = '1st Lt. Grade 5 ♢♢⁵'
-        } else if (levelRole <= 82) {
-            role = 'Major Grade 1 ✷¹'
-        } else if (levelRole <= 84) {
-            role = 'Major Grade 2 ✷²'
-        } else if (levelRole <= 86) {
-            role = 'Major Grade 3 ✷³'
-        } else if (levelRole <= 88) {
-            role = 'Major Grade 4 ✷⁴'
-        } else if (levelRole <= 90) {
-            role = 'Major Grade 5 ✷⁵'
-        } else if (levelRole <= 92) {
-            role = 'Colonel Grade 1 ✷✷¹'
-        } else if (levelRole <= 94) {
-            role = 'Colonel Grade 2 ✷✷²'
-        } else if (levelRole <= 96) {
-            role = 'Colonel Grade 3 ✷✷³'
-        } else if (levelRole <= 98) {
-            role = 'Colonel Grade 4 ✷✷⁴'
-        } else if (levelRole <= 100) {
-            role = 'Colonel Grade 5 ✷✷⁵'
-        } else if (levelRole <= 102) {
-            role = 'Brigadier Early ✰'
-        } else if (levelRole <= 104) {
-            role = 'Brigadier Silver ✩'
-        } else if (levelRole <= 106) {
-            role = 'Brigadier gold ✯'
-        } else if (levelRole <= 108) {
-            role = 'Brigadier Platinum ✬'
-        } else if (levelRole <= 110) {
-            role = 'Brigadier Diamond ✪'
-        } else if (levelRole <= 112) {
-            role = 'Major General Early ✰'
-        } else if (levelRole <= 114) {
-            role = 'Major General Silver ✩'
-        } else if (levelRole <= 116) {
-            role = 'Major General gold ✯'
-        } else if (levelRole <= 118) {
-            role = 'Major General Platinum ✬'
-        } else if (levelRole <= 120) {
-            role = 'Major General Diamond ✪'
-        } else if (levelRole <= 122) {
-            role = 'Lt. General Early ✰'
-        } else if (levelRole <= 124) {
-            role = 'Lt. General Silver ✩'
-        } else if (levelRole <= 126) {
-            role = 'Lt. General gold ✯'
-        } else if (levelRole <= 128) {
-            role = 'Lt. General Platinum ✬'
-        } else if (levelRole <= 130) {
-            role = 'Lt. General Diamond ✪'
-        } else if (levelRole <= 132) {
-            role = 'General Early ✰'
-        } else if (levelRole <= 134) {
-            role = 'General Silver ✩'
-        } else if (levelRole <= 136) {
-            role = 'General gold ✯'
-        } else if (levelRole <= 138) {
-            role = 'General Platinum ✬'
-        } else if (levelRole <= 140) {
-            role = 'General Diamond ✪'
-        } else if (levelRole <= 142) {
-            role = 'Commander Early ★'
-        } else if (levelRole <= 144) {
-            role = 'Commander Intermediate ⍣'
-        } else if (levelRole <= 146) {
-            role = 'Commander Elite ≛'
-        } else if (levelRole <= 148) {
-            role = 'The Commander Hero ⍟'
-        } else if (levelRole <= 152) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 154) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 156) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 158) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 160) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 162) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 164) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 166) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 168) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 170) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 172) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 174) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 176) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 178) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 180) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 182) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 184) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 186) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 188) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 190) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 192) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 194) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 196) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 198) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 200) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 210) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 220) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 230) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 240) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 250) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 260) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 270) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 280) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 290) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 300) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 310) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 320) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 330) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 340) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 350) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 360) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 370) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 380) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 390) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 400) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 410) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 420) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 430) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 440) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 450) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 460) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 470) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 480) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 490) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 500) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 600) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 700) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 800) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 900) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 1000) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 2000) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 3000) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 4000) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 5000) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 6000) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 7000) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 8000) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 9000) {
-            role = 'Legends 忍'
-        } else if (levelRole <= 10000) {
-            role = 'Legends 忍'
+        const GatiRank = getLevelingLevel(sender)
+        var rango = 'Newbie ㋡'
+        if (GatiRank <= 2) {
+            rango = 'Newbie ㋡'
+        } else if (GatiRank <= 4) {
+            rango = 'Beginner Grade 1 ⚊¹'
+        } else if (GatiRank <= 6) {
+            rango = 'Beginner Grade 2 ⚊²'
+        } else if (GatiRank <= 8) {
+            rango = 'Beginner Grade 3 ⚊³'
+        } else if (GatiRank <= 10) {
+            rango = 'Beginner Grade 4 ⚊⁴'
+        } else if (GatiRank <= 12) {
+            rango = 'Private Grade 1 ⚌¹'
+        } else if (GatiRank <= 14) {
+            rango = 'Private Grade 2 ⚌²'
+        } else if (GatiRank <= 16) {
+            rango = 'Private Grade 3 ⚌³'
+        } else if (GatiRank <= 18) {
+            rango = 'Private Grade 4 ⚌⁴'
+        } else if (GatiRank <= 20) {
+            rango = 'Private Grade 5 ⚌⁵'
+        } else if (GatiRank <= 22) {
+            rango = 'Corporal Grade 1 ☰¹'
+        } else if (GatiRank <= 24) {
+            rango = 'Corporal Grade 2 ☰²'
+        } else if (GatiRank <= 26) {
+            rango = 'Corporal Grade 3 ☰³'
+        } else if (GatiRank <= 28) {
+            rango = 'Corporal Grade 4 ☰⁴'
+        } else if (GatiRank <= 30) {
+            rango = 'Corporal Grade 5 ☰⁵'
+        } else if (GatiRank <= 32) {
+            rango = 'Sergeant Grade 1 ≣¹'
+        } else if (GatiRank <= 34) {
+            rango = 'Sergeant Grade 2 ≣²'
+        } else if (GatiRank <= 36) {
+            rango = 'Sergeant Grade 3 ≣³'
+        } else if (GatiRank <= 38) {
+            rango = 'Sergeant Grade 4 ≣⁴'
+        } else if (GatiRank <= 40) {
+            rango = 'Sergeant Grade 5 ≣⁵'
+        } else if (GatiRank <= 42) {
+            rango = 'Staff Grade 1 ﹀¹'
+        } else if (GatiRank <= 44) {
+            rango = 'Staff Grade 2 ﹀²'
+        } else if (GatiRank <= 46) {
+            rango = 'Staff Grade 3 ﹀³'
+        } else if (GatiRank <= 48) {
+            rango = 'Staff Grade 4 ﹀⁴'
+        } else if (GatiRank <= 50) {
+            rango = 'Staff Grade 5 ﹀⁵'
+        } else if (GatiRank <= 52) {
+            rango = 'Sergeant Grade 1 ︾¹'
+        } else if (GatiRank <= 54) {
+            rango = 'Sergeant Grade 2 ︾²'
+        } else if (GatiRank <= 56) {
+            rango = 'Sergeant Grade 3 ︾³'
+        } else if (GatiRank <= 58) {
+            rango = 'Sergeant Grade 4 ︾⁴'
+        } else if (GatiRank <= 60) {
+            rango = 'Sergeant Grade 5 ︾⁵'
+        } else if (GatiRank <= 62) {
+            rango = '2nd Lt. Grade 1 ♢¹ '
+        } else if (GatiRank <= 64) {
+            rango = '2nd Lt. Grade 2 ♢²'
+        } else if (GatiRank <= 66) {
+            rango = '2nd Lt. Grade 3 ♢³'
+        } else if (GatiRank <= 68) {
+            rango = '2nd Lt. Grade 4 ♢⁴'
+        } else if (GatiRank <= 70) {
+            rango = '2nd Lt. Grade 5 ♢⁵'
+        } else if (GatiRank <= 72) {
+            rango = '1st Lt. Grade 1 ♢♢¹'
+        } else if (GatiRank <= 74) {
+            rango = '1st Lt. Grade 2 ♢♢²'
+        } else if (GatiRank <= 76) {
+            rango = '1st Lt. Grade 3 ♢♢³'
+        } else if (GatiRank <= 78) {
+            rango = '1st Lt. Grade 4 ♢♢⁴'
+        } else if (GatiRank <= 80) {
+            rango = '1st Lt. Grade 5 ♢♢⁵'
+        } else if (GatiRank <= 82) {
+            rango = 'Major Grade 1 ✷¹'
+        } else if (GatiRank <= 84) {
+            rango = 'Major Grade 2 ✷²'
+        } else if (GatiRank <= 86) {
+            rango = 'Major Grade 3 ✷³'
+        } else if (GatiRank <= 88) {
+            rango = 'Major Grade 4 ✷⁴'
+        } else if (GatiRank <= 90) {
+            rango = 'Major Grade 5 ✷⁵'
+        } else if (GatiRank <= 92) {
+            rango = 'Colonel Grade 1 ✷✷¹'
+        } else if (GatiRank <= 94) {
+            rango = 'Colonel Grade 2 ✷✷²'
+        } else if (GatiRank <= 96) {
+            rango = 'Colonel Grade 3 ✷✷³'
+        } else if (GatiRank <= 98) {
+            rango = 'Colonel Grade 4 ✷✷⁴'
+        } else if (GatiRank <= 100) {
+            rango = 'Colonel Grade 5 ✷✷⁵'
+        } else if (GatiRank <= 102) {
+            rango = 'Brigadier Early ✰'
+        } else if (GatiRank <= 104) {
+            rango = 'Brigadier Silver ✩'
+        } else if (GatiRank <= 106) {
+            rango = 'Brigadier gold ✯'
+        } else if (GatiRank <= 108) {
+            rango = 'Brigadier Platinum ✬'
+        } else if (GatiRank <= 110) {
+            rango = 'Brigadier Diamond ✪'
+        } else if (GatiRank <= 112) {
+            rango = 'Major General Early ✰'
+        } else if (GatiRank <= 114) {
+            rango = 'Major General Silver ✩'
+        } else if (GatiRank <= 116) {
+            rango = 'Major General gold ✯'
+        } else if (GatiRank <= 118) {
+            rango = 'Major General Platinum ✬'
+        } else if (GatiRank <= 120) {
+            rango = 'Major General Diamond ✪'
+        } else if (GatiRank <= 122) {
+            rango = 'Lt. General Early ✰'
+        } else if (GatiRank <= 124) {
+            rango = 'Lt. General Silver ✩'
+        } else if (GatiRank <= 126) {
+            rango = 'Lt. General gold ✯'
+        } else if (GatiRank <= 128) {
+            rango = 'Lt. General Platinum ✬'
+        } else if (GatiRank <= 130) {
+            rango = 'Lt. General Diamond ✪'
+        } else if (GatiRank <= 132) {
+            rango = 'General Early ✰'
+        } else if (GatiRank <= 134) {
+            rango = 'General Silver ✩'
+        } else if (GatiRank <= 136) {
+            rango = 'General gold ✯'
+        } else if (GatiRank <= 138) {
+            rango = 'General Platinum ✬'
+        } else if (GatiRank <= 140) {
+            rango = 'General Diamond ✪'
+        } else if (GatiRank <= 142) {
+            rango = 'Commander Early ★'
+        } else if (GatiRank <= 144) {
+            rango = 'Commander Intermediate ⍣'
+        } else if (GatiRank <= 146) {
+            rango = 'Commander Elite ≛'
+        } else if (GatiRank <= 148) {
+            rango = 'The Commander Hero ⍟'
+        } else if (GatiRank <= 152) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 154) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 156) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 158) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 160) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 162) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 164) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 166) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 168) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 170) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 172) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 174) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 176) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 178) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 180) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 182) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 184) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 186) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 188) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 190) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 192) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 194) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 196) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 198) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 200) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 210) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 220) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 230) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 240) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 250) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 260) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 270) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 280) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 290) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 300) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 310) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 320) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 330) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 340) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 350) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 360) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 370) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 380) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 390) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 400) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 410) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 420) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 430) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 440) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 450) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 460) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 470) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 480) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 490) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 500) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 600) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 700) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 800) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 900) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 1000) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 2000) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 3000) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 4000) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 5000) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 6000) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 7000) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 8000) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 9000) {
+            rango = 'Legends 忍'
+        } else if (GatiRank <= 10000) {
+            rango = 'Legends 忍'
            
            var prema = 'Free'
 			if (!isAdmin) {
@@ -998,7 +1003,7 @@ mentionedJid: [sender]}
         
 //====================[ ANTI-ENLACE ]====================\\
        
-        if (messagesC.includes("https://")){
+        if (budy.includes("https://")){
 		if (!isGroup) return
 		if (!isAntienlace) return
 		if (isGroupAdmins) return reply(ind.antienlaceerror())
@@ -1029,16 +1034,26 @@ mentionedJid: [sender]}
 			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mGATI-BOT\x1b[1;37m]', time, color('Message'), 'de', color(sender.split('@')[0]), 'en', color(groupName), 'args :', color(args.length))
 			
 			//anti spam by g4tito
-if (isCmd && isFiltered(from) && !isGroup) {
-        console.log(color('[ SPAM ]', 'red'), time, color(command), 'de', color(pushname))
+			if (isCmd && isFiltered(from) && !isGroup) {
+        console.log(color('SPAM', 'red'), color(moment.tz('America/Sao_Paulo').format('HH:mm:ss'), 'yellow'), color(`${command}`), 'DE:', color(pushname))
         const ff = {
-                  text:  `Mas despacio @${sender.split('@')[0]}...\n\nEspere 5 segundos antes de usar otro comando✅`,
+                  text:  `Ups @${sender.split('@')[0]}, Espere 5 segundos antes de usar otro comando.`,
                     contextInfo: {
                         mentionedJid: [sender]
                     }
                  }
         return reply(ff)}
-
+        
+        if (isCmd && isFiltered(from) && isGroup) {
+        console.log(color('SPAM', 'red'), color(moment.tz('America/Sao_Paulo').format('HH:mm:ss'), 'yellow'), color(`${command}`), 'DE:', color(pushname))
+        const ff1 = {
+                  text:  `Ups @${sender.split('@')[0]}, Espere 5 segundos antes de usar otro comando.`,
+                    contextInfo: {
+                        mentionedJid: [sender]
+                    }
+                 }
+        return reply(ff1)}
+    
 switch(command){
 
 case 'd':
@@ -1365,7 +1380,6 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
                			break
                
 		case 'limite':
-		         addFilter(from)
                  if (!isVerify) return reply( ind.noverify())
 				checkLimit(sender)
 				break
@@ -1400,10 +1414,12 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
 ├─────────────╾
 │ *✅Total reg:* ${_verify.length} usuarios
 └─────────────╾`
+                let buff = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURIComponent(pushname)}&member=${_verify.length}&seri=${serialUser}&pp=${ppimg}&bg=${imgibb}`)
 				buffer = await getBuffer(ppimg)
 				addRegisteredUser(sender, pushname, time, serialUser)
-				client.sendMessage(from, buffer, image, {quoted: mek, caption: veri})
+				client.sendMessage(from, buff, image, {quoted: mek, caption: veri})
 				console.log(color('[REGISTRO]'), color(time, 'yellow'), 'Nombre:', color(pushname, 'cyan'), 'Codigo:', color(serialUser, 'cyan'))
+				addFilter(from)
 				break
 				
 		case 'mining':
@@ -1434,22 +1450,39 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
         case 'help': 
 		case 'menu':
 		        if (!isVerify) return reply( ind.noverify())
+		       const reqXp  = 5000 * (Math.pow(2, getLevelingLevel(sender)) - 1)
+		       const dinero = checkATMuser(sender)
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
                     wew = fs.readFileSync(`./almacenamiento/imagenes/gati_3.jpg`)
                       zain = `
-◪「 *INFO DEL USUARIO* 」
-│➛Nombre : ${pushname}
-│➛Exp : ${getLevelingXp(sender)}
-│➛Numero :  wa.me/${sender.split("@")[0]}
-│➛Rango : ${role}
-└➛Nivel : ${getLevelingLevel(sender)}
+❐ *INFO DEL USUARIO*
+│ Nombre: ${pushname}
+│ Numero:  wa.me/${sender.split("@")[0]}
+│ Dinero: Rp${dinero},-
+│ Exp: ${getLevelingXp(sender)}/${reqXp}
+│ Rango: ${GatiRank}
+╰ Nivel: ${getLevelingLevel(sender)}
 
-◪「 *INFO DEL BOT* 」
-│➛Nombre : gati-bot
-│➛Numero : wa.me/51988050859
-│➛Prefijo : 「 ${prefix} 」
-│➛Vercion : 1.1.7
-└➛Total reg: ${_verify.length} usuarios
+❏ *INFO DEL BOT*
+│Nombre: ${client.user.name}
+│ Numero: wa.me/51988050859
+│ Prefijo: 「 ${prefix} 」
+│Navegador: ${client.browserDescription[1]}
+│Servidor: ${client.browserDescription[0]}
+│Vercion: ${client.browserDescription[2]}
+│Velocidad: ${process.uptime()}
+│Celular: ${client.user.phone.device_manufacturer}
+│WhatsApp: ${client.user.phone.wa_version}
+╰Verificados: ${_verify.length} usuarios
+ 
+❏ *INFO DEL GRUPO*
+│Nombre: ${groupMetadata.subject}
+│Creador: wa.me/${groupMetadata.owner.split("@")}
+│Miembros: ${groupMetadata.participants.length} participantes
+│Admins: ${groupAdmins.length}
+│Bienvenida: ${isBienvenida}
+│Nivelacion: ${isLevelingOn}
+╰Antienlace: ${isAntienlace}
 
 ┌「 *MENÚ* 」
 └────────╮
@@ -1690,7 +1723,7 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
 └────────╮
 ┏╾───────╯
 │▪︎${prefix}hidetag
-│▪︎${prefix}stickertag [beta]
+│▪︎${prefix}sticktag
 │▪︎${prefix}imagetag [beta]
 └──┘
 
@@ -1706,8 +1739,19 @@ client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.sta
 │ *créditos:*
 │ ▪︎_gatito_
 ╰──────────────
-` 
-client.sendMessage(from, wew, image, {quoted: { mem: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "\n*GATI-BOT VERIFICADO*\n", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./almacenamiento/imagenes/gati_5.jpg')} } }, caption: zain, pushname, prefix, getLevelingXp, getLevelingLevel, sender, role })
+`
+client.sendMessage(from, wew, image, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "\n*GATI-BOT VERIFICADO*\n", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./almacenamiento/imagenes/gati-bot_5.jpg')} } }, caption: zain, pushname, prefix, getLevelingXp, getLevelingLevel, sender, GatiRank })
+addFilter(from)
+break
+
+case 'help2': 
+		case 'menu2':
+		        if (!isVerify) return reply( ind.noverify())
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+                      zain2 = `
+MAINKRA XD
+`
+client.sendMessage(from, image, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "\n*GATI-BOT VERIFICADO*\n", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./almacenamiento/imagenes/gati-bot_5.jpg')} } }, caption: zain2, pushname, prefix, getLevelingXp, getLevelingLevel, sender, GatiRank })
 break
 
 //====================[ MENU GRUPO ]====================\\
@@ -1722,21 +1766,30 @@ break
 					client.sendMessage(from, github(), text)
 					break
 					
-		case 'nivel':
-                 if (!isVerify) return reply( ind.noverify())
-					if (!isLevelingOn) return reply(ind.lvlnoon())
-					if (!isGroup) return reply(ind.groupo())
-					const userLevel = getLevelingLevel(sender)
-					const userXp = getLevelingXp(sender)
-					if (userLevel === undefined && userXp === undefined) return reply(ind.lvlnul())
-					const requiredXp = 5000 * (Math.pow(2, userLevel) - 1)
-					resul = `◪ *TU NIVEL*\n├─ ❏ *Nombre:* ${pushname}\n├─ ❏ *Numero:* ${sender.split("@")[0]}\n├─ ❏ *Exp:* ${userXp}/${requiredXp}\n└─ ❏ *Nivel:* ${userLevel}`
-					client.sendMessage(from, resul, text, { quoted: mek})
-					.catch(async (err) => {
-					console.error(err)
-					await reply(`Error!\n${err}`)
-					})
-					break
+	    case 'nivel':
+				if (!isVerify) return reply( ind.noverify())
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+                if (!isLevelingOn) return reply(ind.lvlnoon())
+                if (!isGroup) return reply(ind.groupo())
+                try {
+				ppimg = await client.getProfilePicture(`${sender.split('@')[0]}@c.us`)
+				} catch {
+				ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+				}
+                const userLevel = getLevelingLevel(sender)
+                const userXp = getLevelingXp(sender)
+                if (userLevel === undefined && userXp === undefined) return reply(ind.lvlnul())
+                const requiredXp = 5000 * (Math.pow(2, userLevel) - 1)
+                nivelrs = await getBuffer(`https://lolhuman.herokuapp.com/api/rank?apikey=${lolkey}&img=${ppimg}&background=${imgibb}&username=${encodeURIComponent(pushname)}&level=${userLevel}&ranking=${GatiRank}&currxp=${userXp}&xpneed=${requiredXp}`)
+                resul = `◪ *TU NIVEL*\n├─ ❏ *Nombre:* ${pushname}\n├─ ❏ *Numero:* ${sender.split("@")[0]}\n├─ ❏ *Exp:* ${userXp}/${requiredXp}\n└─ ❏ *Nivel:* ${userLevel}`
+                client.sendMessage(from, nivelrs, image, { quoted: mek, caption: resul})
+                .catch(async (e) => {
+                console.error(e)
+                await reply(`*Lo siento ocurrio un error inesperado*`)
+                })
+                addFilter(from)
+                break
 					
 		case 'info':
 					me = client.user
@@ -1874,7 +1927,7 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
 					} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 					}
-					 profile = `╭─「 *PROFILE ANDA* 」\n│• *Name:* ${pushname}\n│• *XP:* ${getLevelingXp(sender)}\n│• *Level:* ${getLevelingLevel(sender)}\n│• *Role:* ${role}\n│• *User Terdaftar:* ✓\n│• *Link:* wa.me/${sender.split("@")[0]}\n╰──────────────────`
+					 profile = `╭─「 *PROFILE ANDA* 」\n│• *Name:* ${pushname}\n│• *XP:* ${getLevelingXp(sender)}\n│• *Level:* ${getLevelingLevel(sender)}\n│• *Role:* ${GatiRank}\n│• *User Terdaftar:* ✓\n│• *Link:* wa.me/${sender.split("@")[0]}\n╰──────────────────`
 					buffer = await getBuffer(ppimg)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: profile})
 					break
@@ -2080,6 +2133,7 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
 							} else {
 						reply(`Kirim gambar dengan caption ${prefix}sticker atau reply/tag gambar`)
 					}
+					addFilter(from)
 					break
 					
 		case 'blockk':
@@ -2315,7 +2369,7 @@ LISTA RANDOM:
 					if (!isGroupAdmins) return reply(ind.admin())
 					if (args.length < 1) return reply(ind.error01())
 					if (Number(args[0]) === 1) {
-						if (isWelkom) return reply('*Fitur welcome sudah aktif sebelum nya')
+						if (isBienvenida) return reply('*Fitur welcome sudah aktif sebelum nya')
 						welkom.push(from)
 						fs.writeFileSync('./base_de_datos/bot/bienvenida.json', JSON.stringify(welkom))
 						reply('❬ SUCCSESS ❭ mengaktifkan fitur welcome di group ini')
@@ -2464,6 +2518,7 @@ LISTA RANDOM:
 							} else {
 						reply(`Kirim gambar/video/gif dengan caption \n${prefix}sticker (durasi sticker video 1-9 detik)`)
 					}
+					addFilter(from)
 					break
 					
                 case 'tts':
@@ -2523,22 +2578,26 @@ if (!isVerify) return reply( ind.noverify())
 reply(ind.wait())
 waifu = await getBuffer(`https://api.lolhuman.xyz/api/random/waifu?apikey=${lolkey}`)
 client.sendMessage(from, waifu, image, { quoted: mek})
+addFilter(from)
 break
 
 case 'husbu':
-if (isBanned) return reply('Maaf kamu sudah terbenned!')
 if (!isVerify) return reply( ind.noverify()) 
+if (isBanned) return reply('Maaf kamu sudah terbenned!')
 reply(ind.wait())
 husbu = await getBuffer(`https://api.lolhuman.xyz/api/random/husbu?apikey=${lolkey}`)
 client.sendMessage(from, husbu, image, { quoted: mek})
+addFilter(from)
 break
 
 case 'loli':
-if (isBanned) return reply('Maaf kamu sudah terbenned!')
 if (!isVerify) return reply( ind.noverify()) 
+if (!isNsfw) return reply(ind.nsfwoff)
+if (isBanned) return reply('Maaf kamu sudah terbenned!')
 reply(ind.pedo())
 loli = await getBuffer(`https://api.lolhuman.xyz/api/random/loli?apikey=${lolkey}`)
 client.sendMessage(from, loli, image, { quoted: mek})
+addFilter(from)
 break
 
 case 'elf':
@@ -2547,6 +2606,7 @@ if (!isVerify) return reply( ind.noverify())
 reply(ind.wait())
 elf = await getBuffer(`https://api.lolhuman.xyz/api/random/elf?apikey=${lolkey}`)
 client.sendMessage(from, elf, image, { quoted: mek})
+addFilter(from)
 break
 
 //====================[ MENU MAKER ]====================\\
@@ -2589,6 +2649,7 @@ break
                     ini_txt = args.join(" ")
                     ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/textprome/${command}?apikey=${lolkey}&text=${ini_txt}`)
                     client.sendMessage(from, ini_buffer, image, { quoted: mek})
+                    addFilter(from)
                     break
                 case 'pornhub':
                 case 'glitch':
@@ -2609,6 +2670,7 @@ break
                     txt2 = args[1]
                     ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/textprome2/${command}?apikey=${lolkey}&text1=${txt1}&text2=${txt2}`)
                     client.sendMessage(from, ini_buffer, image, { quoted: mem})
+                    addFilter(from)
                     break
 
                 // Photo Oxy //
@@ -2641,6 +2703,7 @@ break
                     ini_txt = args.join(" ")
                     ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/photooxy1/${command}?apikey=${lolkey}&text=${ini_txt}`)
                     client.sendMessage(from, ini_buffer, image, { quoted: mek})
+                    addFilter(from)
                     break
                     
                 case 'tiktok':
@@ -2656,6 +2719,7 @@ break
                     txt2 = args[1]
                     ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/photooxy2/${command}?apikey=${lolkey}&text1=${txt1}&text2=${txt2}`)
                     client.sendMessage(from, ini_buffer, image, { quoted: mek})
+                    addFilter(from)
                     break
 
                  // Ephoto 360 //
@@ -2694,6 +2758,7 @@ break
                     ini_txt = args.join(" ")
                     ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/ephoto1/${command}?apikey=${lolkey}&text=${ini_txt}`)
                     client.sendMessage(from, ini_buffer, image, { quoted: mek})
+                    addFilter(from)
                     break
                     
                    case 'ytkomen':
@@ -3193,6 +3258,31 @@ break
                     client.sendMessage(from, ini_buffer, image, { quoted: mek })
                     break
                  
+//====================[ MENU TAG ]====================\\
+                 
+               case 'sticktag':
+            if ((isMedia && !mek.message.videoMessage || isQuotedSticker) && args.length == 0) {
+            encmedia = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
+            file = await client.downloadAndSaveMediaMessage(encmedia, filename = getRandom())
+            value = args.join(" ")
+            var group = await client.groupMetadata(from)
+            var member = group['participants']
+            var mem = []
+            member.map(async adm => {
+            mem.push(adm.id.replace('c.us', 's.whatsapp.net'))
+            })
+            var options = {
+                contextInfo: { mentionedJid: mem },
+                quoted: mek
+            }
+            ini_buffer = fs.readFileSync(file)
+            client.sendMessage(from, ini_buffer, sticker, options)
+            fs.unlinkSync(file)
+            } else {
+            reply(`*Etiqueta un sticker*`)
+            }
+            break
+                 
                  case 'hidetag':
                  if (!isVerify) return reply( ind.noverify())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -3220,20 +3310,33 @@ if (!isVerify) return reply( ind.noverify())
 if (!isGroup) return await reply(mess.only.group)
 if (!isAdmin && !isCreador) return await reply(mess.only.admin)
 if (!isQuotedImage && !isImage) return await reply(`Lalala... *cancion feliz*\nY la imagen pedazo de nada? >:/`)
-mediatag = isQuotedImage ? JSON.parse(JSON.stringify(sam).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
+mediatag = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 buffer = await client.downloadMediaMessage(mediatag)
 await wa.hideTagImage(from, buffer)
 break
                  
-                 case 'stickertag':
-                 if (!isVerify) return reply( ind.noverify())
-if (!isGroup) return await reply(mess.only.group)
-if (!isAdmin && !isCreador) return await reply(mess.only.admin)
-if (!isQuotedImage && !isImage) return await reply('Etiqueta un stiker')
-media = isQuotedSticker ? JSON.parse(JSON.stringify(sam).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
-buffer = await client.downloadMediaMessage(media)
-await wa.hideTagSticker(from, buffer)
-break
+                 case 'ytbuscar':
+			if (args.length < 1) return reply('Que quiere buscar?!')
+			var srch = args.join('');
+			try {
+        	var aramas = await yts(srch);
+   			} catch {
+        	return await client.sendMessage(from, 'Error!', MessageType.text)
+    		}
+    		aramat = aramas.all 
+    		var tbuff = await getBuffer(aramat[0].image)
+    		var ytresult = '';
+    		ytresult += '「 *BÚSQUEDA EN YOUTUBE* 」'
+    		ytresult += '\n________________________\n\n'
+   			aramas.all.map((video) => {
+        	ytresult += '❏ Titulo: ' + video.title + '\n'
+            ytresult += '❏ Link: ' + video.url + '\n'
+            ytresult += '❏ Duracion: ' + video.timestamp + '\n'
+            ytresult += '❏ Upload: ' + video.ago + '\n________________________\n\n'
+    		});
+    		ytresult += '◩ *GATI-BOT*'
+    		await fakethumb(tbuff,ytresult)
+			break
                  
 //====================[ MENSAJES ]====================\\
                    
