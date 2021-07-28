@@ -53,7 +53,6 @@ const tiktod = require('tiktok-scraper')
 const brainly = require('brainly-scraper')
 const ffmpeg = require('fluent-ffmpeg')
 const cd = 4.32e+7
-const CFonts  = require('cfonts')
 const { removeBackgroundFromImageFile } = require('remove.bg')
 const { ind } = require('./mensaje')
 
@@ -276,7 +275,7 @@ function kyun(seconds){
 }
 /********** FUNCIÓN ***************/
 
-CFonts.say('=======================「 INFO 」=========================', {font: 'console', align: 'center', gradient: ['white', 'cyan']})
+console.log(color('=======================「 INFO 」=========================','magenta'))
 console.log(color('','yellow'))
 console.log(color(' > Por favor de mantener este','yellow'))
 console.log(color(' > codigo tal y como esta.','yellow'))
@@ -286,7 +285,8 @@ console.log(color(' > manten los créditos.','yellow'))
 console.log(color('','yellow'))
 console.log(color(' > BY G4TITO','yellow'))
 console.log(color('','yellow'))
-CFonts.say('======================「 GATI-BOT 」======================', {font: 'console', align: 'center', gradient: ['white', 'cyan']})
+console.log(color(' > BY G4TITO','yellow'))
+console.log(color('======================「 GATI-BOT 」======================','magenta'))
 const client = new WAConnection()
 //WHATSAPP WEB
 client.version = [2, 2119, 6]
