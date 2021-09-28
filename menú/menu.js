@@ -10,10 +10,10 @@ const menu = (pushname, prefix, checATM, useLevel, useXp, requireXp) => {
 └─────────────╮
 ┌─────────────╯
 ├─「 *INFO DEL BOT* 」
-│➛Nombre : gati-bot
-│➛Numero : wa.me/51988050859
+│➛Nombre : Akira-bot
+│➛Numero : wa.me/+525550514111
 │➛Prefijo : 「 ${prefix} 」
-│➛Vercion : 1.1.7
+│➛Vercion : 1.0
 └─────────────┘
 
 ╭──────────────
@@ -279,7 +279,7 @@ const menu = (pushname, prefix, checATM, useLevel, useXp, requireXp) => {
 
 ╭──────────────
 │ *créditos:*
-│ ▪︎_gatito_
+│ ▪︎_sandy_
 ╰──────────────
 `
 }
